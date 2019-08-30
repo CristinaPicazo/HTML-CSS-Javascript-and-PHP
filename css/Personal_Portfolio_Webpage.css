@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(1, 0, 80);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(90deg,hsl(240, 90%, 39%),rgb(6, 194, 194));
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #17009b, #ac0000);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+header .name{
+    color: aliceblue;
+    font-size: 40px;
+    line-height: 100px;
+    float: left;
+ 
+}
+
+header nav{
+    color: white;
+    float: right;
+    line-height: 100px;
+}
+
+header nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 500ms ease;
+}
+
+header nav a:hover{
+    background-color: rgb(1, 0, 80);
+}
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+h2{
+    color: darkred;
+    font-size: 45px;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-size: 45px;
+    margin-top: 3px;
+}
+
+a{
+    color: white;
+    text-align: center !important;
+}
+
+#welcome-section{
+    margin: 0px;
+    padding: 20px; 
+    text-align: center;
+    display: block;
+    align-items: center; 
+    padding: 15% 0 0 0; 
+}
+
+#projects{
+    background: linear-gradient(90deg,hsl(189, 100%, 44%),rgb(24, 0, 158));
+    display: block;
+    margin: 0px;
+    padding: 20px; 
+    border: 30%;
+    text-align: center;
+}
+
+#projects img{
+    width:  200px;
+    height: 200px;
+    box-shadow: 0 10px 20px rgb(0, 204, 255), 0 6px 6px rgba(0, 183, 255, 0.23);
+}
+
+#profile-link{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px; 
+}
+
+#profile-link a {
+    line-height: 50px;
+}
+
+
+
+
