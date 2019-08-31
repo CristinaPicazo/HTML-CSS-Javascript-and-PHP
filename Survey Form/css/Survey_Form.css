@@ -1,0 +1,147 @@
+/*@media (max-width: 350px) {
+    
+    #survey-form{
+        border-style: groove;
+        padding: 40px;
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        float: centre;
+        background: 
+            linear-gradient(red, transparent),
+            linear-gradient(to top right, blue, transparent);
+        background-blend-mode: screen;
+        margin: 5px;
+        display:inline-flex;
+    }
+
+    .first-box{
+        float:left;
+        right: 5px;   
+        width: 30%; 
+    }
+        
+    .second-box{
+        float: center;
+        text-align: center; 
+        left: 5px;
+        width: 30%; 
+    }
+        
+    .third-box{
+        float: left;
+        text-align: center;
+        width: 40%;  
+    }
+}
+
+@media (max-width: 200px) {
+    border-style: groove;
+        padding: 40px;
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        float: centre;
+        background: 
+            linear-gradient(red, transparent),
+            linear-gradient(to top right, blue, transparent);
+        background-blend-mode: screen;
+        margin: 5px;
+        display:inline-flex;
+    }
+
+    .first-box{
+        float:left;
+        right: 5px;   
+        width: 30%; 
+    }
+    
+    .second-box{
+        float: center;
+        text-align: center; 
+        left: 5px;
+        width: 30%; 
+     }
+    
+    .third-box{
+        float: left;
+        text-align: center;
+        width: 40%;  
+    }
+}*/
+
+body{
+    background: rgb(231, 0, 0);
+    font-family: Lobster, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 25px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color:white;
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 32px;
+    text-align: center;
+    text-decoration-line: overline;
+}
+
+p{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#survey-form{
+    border-style: groove;
+    padding: 40px;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    float: centre;
+    background: 
+        linear-gradient(red, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+    margin: 5px;
+    display:inline-flex;
+}
+
+.first-box{
+    float:left;
+    right: 5px;   
+    width: 30%; 
+}
+
+.second-box{
+    float: center;
+    text-align: center; 
+    left: 5px;
+    width: 30%; 
+ }
+
+.third-box{
+    float: left;
+    text-align: center;
+    width: 40%;  
+}
+
+#submit{
+    background: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+textarea{
+    grid-auto-rows: 8px;
+    columns: 5;
+} 
+
+#clothes{
+    border-style: dashed;
+}
+
+.input[type='checkbox']{
+    text-decoration: none;
+    color: blue;
+}
