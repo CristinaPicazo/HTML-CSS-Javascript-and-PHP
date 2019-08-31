@@ -1,0 +1,88 @@
+/*@media (max-width: 350px) {
+    max-width: 350px;
+}*/
+
+body{
+    background: linear-gradient(90deg,hsl(78, 100%, 33%),rgb(88, 126, 0));
+}
+
+nav{
+    color: white;
+    background: rgb(255, 255, 0);
+    font-size: 30px;
+    text-align: center;
+    margin: 2px;
+    padding: 20px;  
+    word-spacing: 60px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color:rgb(255, 255, 0);
+    background: rgb(88, 126, 0);
+}
+
+#header{
+    text-align: center;
+    padding: 20px;
+}
+
+#acrylic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(255, 255, 162);
+    margin: 10px 200px;
+    text-align: left;
+    color: rgb(0, 139, 19); 
+    padding: 10px 50px;
+}
+
+#toe{
+    display: flex;
+    flex-direction: column;
+    background:rgb(255, 255, 162);
+    margin: 10px 200px;
+    align-items: center;
+    color: rgb(0, 139, 19); 
+    padding: 10px 10px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background:rgb(255, 255, 162);
+    margin: 10px 100px;
+    text-align: center;
+    color: rgb(0, 139, 19); 
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#form{
+    background:rgb(255, 255, 162);
+    margin: 10px 200px;
+    color: rgb(0, 139, 19); 
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+h1{
+    color: rgb(255, 255, 0);
+    text-decoration: underline;
+    text-shadow: 0 0 0.5em rgb(43, 255, 0), 0 0 0.5em rgb(43, 255, 0), 0 0 0.5em rgb(43, 255, 0);
+    font-size: 70px;
+}
+
+h2{
+    color: rgb(255, 255, 0);
+    text-decoration: underline;
+    font-size: 30px;
+    text-align: center;
+}
+
+header img{
+    box-shadow: 0 0 0.5em rgb(43, 255, 0), 0 0 0.5em rgb(43, 255, 0), 0 0 0.5em rgb(43, 255, 0);
+}
