@@ -1,0 +1,111 @@
+
+@media screen and (max-width:px){
+    background:rgb(227, 227, 255);
+}
+
+.vertical-menu {
+    list-style-type: none;
+    position: fixed;
+    overflow: hidden;
+    width: 15%;
+}
+
+.vertical-menu header{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(95, 95, 95);
+    padding: 10px 20px;
+    display: block;
+}
+
+.vertical-menu a {
+    color: whitesmoke;
+    background-color: rgb(165, 164, 164); 
+    display: block; 
+    text-decoration: none !important;
+    line-height: 30px;
+    padding: 10px 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.main-section{
+    margin-left: 20%;
+    margin-right: 5%;
+    display: block; 
+    width: 75%;
+}
+
+body{
+    background: linear-gradient(90deg,hsl(0, 0%, 87%),rgb(255, 255, 255));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 3px 3px 3px grey;
+}
+
+header{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+
+#biology li{
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    list-style: circle;
+    
+}
+
+#teeth{
+    list-style: square !important;
+    font-size: 15px !important;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+p{
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+#int_picture{
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 3px grey;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#behavior_picture{
+    align-items: left;
+    border-radius: 8px;
+    float: left;
+    padding: 8px;
+}
+
+#beha_picture{
+    display: block;
+    float: right;    
+}
+
+#domestication_picture{
+    align-items: center;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
