@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(1, 0, 80);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background: #ad0000;
+    margin-bottom: 20px;
+}
+
+header .name{
+    color: aliceblue;
+    font-size: 40px;
+    line-height: 100px;
+    float: left;
+}
+
+header nav{
+    color: white;
+    float: right;
+    line-height: 100px;
+}
+
+header nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 500ms ease;
+}
+
+header nav a:hover{
+    background-color: rgb(1, 0, 80);
+}
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+h2{
+    color: darkred;
+    font-size: 45px;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-size: 45px;
+    margin-top: 3px;
+}
+
+a{
+    color: white;
+    text-align: center !important;
+}
+
+#welcome-section{
+    height: 100vh;
+    text-align: center;
+    display: block;
+    align-items: center; 
+    padding: 20% 0 0 0; 
+}
+
+#projects{
+    background-color: rgb(1, 0, 200);
+    display: block;
+    margin: 0px;
+    padding: 20px; 
+    border: 30%;
+    text-align: center;
+}
+
+#projects img{
+    width:  200px;
+    height: 200px;
+}
+
+#profile-link{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px; 
+}
+
+#profile-link a {
+    line-height: 50px;
+}
+
+
+
+
