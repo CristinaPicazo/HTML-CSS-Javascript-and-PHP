@@ -1,75 +1,62 @@
-/*@media (max-width: 350px) {
-    
-    #survey-form{
-        border-style: groove;
-        padding: 40px;
-        position: absolute;
-        left: 20%;
-        right: 20%;
-        float: centre;
-        background: 
-            linear-gradient(red, transparent),
-            linear-gradient(to top right, blue, transparent);
-        background-blend-mode: screen;
-        margin: 5px;
-        display:inline-flex;
-    }
-
-    .first-box{
-        float:left;
-        right: 5px;   
-        width: 30%; 
-    }
-        
-    .second-box{
-        float: center;
-        text-align: center; 
-        left: 5px;
-        width: 30%; 
-    }
-        
-    .third-box{
-        float: left;
-        text-align: center;
-        width: 40%;  
-    }
+@media (max-width: 350px) {
+body{
+    background: rgb(231, 0, 0);
+    font-family: Lobster, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 25px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color:white;
+    text-decoration: underline;
 }
 
-@media (max-width: 200px) {
+h1{
+    font-size: 32px;
+    text-align: center;
+    text-decoration-line: overline;
+}
+
+p{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#survey-form{
     border-style: groove;
-        padding: 40px;
-        position: absolute;
-        left: 20%;
-        right: 20%;
-        float: centre;
-        background: 
-            linear-gradient(red, transparent),
-            linear-gradient(to top right, blue, transparent);
-        background-blend-mode: screen;
-        margin: 5px;
-        display:inline-flex;
-    }
+    padding: 40px;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    float: centre;
+    background: 
+        linear-gradient(red, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+    margin: 5px;
+}
 
-    .first-box{
-        float:left;
-        right: 5px;   
-        width: 30%; 
-    }
-    
-    .second-box{
-        float: center;
-        text-align: center; 
-        left: 5px;
-        width: 30%; 
-     }
-    
-    .third-box{
-        float: left;
-        text-align: center;
-        width: 40%;  
-    }
-}*/
+#submit{
+    background: red !important;
+    color: white !important;
+    padding: 20px;
+    text-align: center;   
+}
 
+#clothes{
+    border-style: dashed;
+}
+
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gender p{
+    text-decoration: none !important;
+}
+
+
+}
 body{
     background: rgb(231, 0, 0);
     font-family: Lobster, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -144,4 +131,4 @@ textarea{
 .input[type='checkbox']{
     text-decoration: none;
     color: blue;
-}
+}*/
