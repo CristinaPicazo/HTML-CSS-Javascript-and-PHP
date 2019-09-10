@@ -18,5 +18,5 @@ var name = document.getElementById("name").value;
 var email = document.getElementById("email").value;
 var comments = document.getElementById("comments").value;
 
-alert("Hi" + name + "with email address"+email+ ". I appreciate your comments ("+comments+ "), but this is just a test.");
+alert("Hi " + name + " with email address"+email+ ". I appreciate your comments ("+comments+ "), but this is just a test.");
 }
