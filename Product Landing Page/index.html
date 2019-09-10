@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />    
     <title>Product Landing Page</title>
     <!--import external css-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/Product_Landing.css" /><!--User Story #14--><!--User Story #15-->
+    <script language="JavaScript" type="text/javascript" src="script/Product_Landing.js"></script>
+    <noscript><h1>JavaScript is not activated</h1></noscript>
 </head>
 <body>
     <!--User Story #3--><!--User Story #13-->
     <nav id="nav-bar">
 
          <!--User Story #4--><!--User Story #5-->
-        <a class="nav-link" href="#">Acrylic</a>
+        <a class="nav-link" href="#acrylic">Acrylic</a>
+        <a class="nav-link" href="#gel">Gel</a>
         <a class="nav-link" href="#toe">Foot</a>
         <a class="nav-link" href="#form">Form</a>
         <a class="nav-link" href="#contact">Contact</a>    
-    </nav>  
+    </nav>
 
     <!--User Story #1-->
     <header class="header" id="header">
         <h1>Veronica Nails</h1>
-   
+
+        <!--Animation-->
+        <div class="star-1 stars"></div>
+        <div class="star-2 stars"></div> 
+        <div class="star-3 stars"></div>
+
         <!--User Story #2-->
         <img id="header-img" src="images/foot.jpeg" alt="nails">  
     </header>
@@ -35,35 +43,71 @@
         </video>
         <p>Porcelain nails are used to beauty the hands, long natural nails and correct some bad habits.</p>
     </section>
-    <hr>
+
+    <hr class="style">
+    <h2>Gel</h2>
+    <section id="gel">
+        <img id="gel-img" src="images/nails (7).jpeg" alt="Gel nails">
+        <p>There are two types of gel, hard gel and soft gel.</p>
+        <p>Hard gel gets its name because, once cured, it is tough enough to be made into a nail extension. 
+            Nail extensions are artificial nails created by using a nail product to extend the nail past the edge 
+            of the natural nail.</p>
+        <p>Soft gel refers to the gel products that are too soft to create a nail extension. This includes gel polishes
+            and thicker gels meant for gel-overlay services. Gel polishes are used for the increasingly popular gel
+            polish manicures. These manicures are gentle to the natural nail and the polish stays intact on the nail
+            for at least a couple of weeks with high shine and no cracking, peeling or chipping.</p>
+        <p>The product used to create nail extensions using gel or gel nails is gel, not to be confused with acrylic nails, 
+            which are created using liquid monomer and polymer powder. All gel services are performed using some form of gel, 
+            which usually comes in pots of gel or bottles of gel polish. Gel also comes in a variety of colors. All forms of 
+            gel require curing, or hardening, under a UV (ultraviolet) light, which can be either a conventional bulb or LED 
+            lamp.</p>    
+        <p id="text_extra">UV curing refers to the chemical process that occurs when photoinitiators within the gel itself are exposed to 
+            the UV or blue light. The energy from the light causes certain bonds in the initiator molecules to break, forming 
+            free radicals. The radicals begin attacking double bonds in the gel's component molecules, beginning a polymerization
+            reaction which eventually encompasses all the molecules of the gel. Gels usually contain a mixture of acrylic 
+            monomers and oligomers, <span id="aditional" class="hide">which combine to form long, interlocking chains during the polymerization, a process known 
+            as cross-linking. These long, bonded chains make the gel hard and chemically resistant. Usually, once the nail 
+            extension and/or gel manicure has been finished, there is a residual tacky layer, referred to as the "inhibition 
+            layer," that is removed by wiping with a preferably lint-free wipe soaked in high concentrate alcohol.</span>
+            <a id="link_1" href="#text_extra" onclick="show(); return false;">Continue reading</a></p>
+        <p>The process typically ends with an application of cuticle oil on all fingers, to bring back nourishment into the cuticle
+            after harsh alcohol application.</p>
+            
+        <pre>All the information, except the pictures, has been taken from the following <a href="https://en.wikipedia.org/wiki/Gel_nails" target=_blank>page</a>.</pre>
+    </section>
+    <hr class="style">
 
     <h2>Foot</h2>
     <section id="toe">
         <img id="toe-img" src="images/nails (4).jpeg" alt="Toe">
         <p>Good way to beauty all your body is something as simple as relax your feet with a spa and treatment to soften them.</p>
     </section>
-    <hr>
+    <hr class="style">
 
         <!--User Story #7-->
     <h2>Form</h2>
-    <section id="form">
+    <section id="form" action="#form" onsubmit="return submit()" method="post">
         <form>
-
+            <p>Name:<br>
+            <input type="text" placeholder="name" id="name" required></p>
             <!--User Story #8--><!--User Story #9--><!--User Story #10-->
             <p>Email:<br>
-            <input type="email" placeholder="email" id="email"><br>
+            <input type="email" placeholder="email" id="email" required></p>
+
+            <p>Comments:<br>
+            <textarea rows="8" type="text" placeholder="add comments here" id="comments" required></textarea></p>
 
             <!--User Story #11--><!--User Story #12??-->
-            <input type="submit" id="submit" /*url="https://www.freecodecamp.com/email-submit"*/></p>
+            <input type="submit" id="submit" value="Submit">
 
             
         </form>
     </section>
-    <hr>
+    <hr class="style">
 
     <h2>Contact</h2>
     <section id="contact">
-        <a href="mailto:example@example.com" class="btn contact-details">Send a mail</a><br>
+        <a href="mailto:cristina.picazo.merlos@gmail.com" class="btn contact-details">Send a mail</a><br>
     </section>
 
 </body>
