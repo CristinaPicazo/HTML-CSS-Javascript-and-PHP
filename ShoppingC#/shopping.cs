@@ -1,6 +1,6 @@
 using System;
 
-public class Prueba
+public class shopping
 {
 	
 	public static void Main()
