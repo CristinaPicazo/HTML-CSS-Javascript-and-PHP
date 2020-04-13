@@ -1,0 +1,141 @@
+header{
+    position: fixed;
+    background-image: url(../../images/Web_Head.png);
+    opacity: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+header .name{
+    color: rgb(97, 0, 0);
+    text-shadow: -6px 3px 0 #e6540083;
+    font-size: 40px;
+    line-height: 100px;
+    float: left;
+}
+
+header nav{
+    color: white;
+    float: right;
+    word-spacing: 10px;
+    line-height: 100px;
+}
+
+header nav a{
+    display: inline-block;
+    color: rgb(97, 0, 0);
+    text-shadow: -3px 3px 0 #e65400a6;
+    text-decoration: none;
+    padding-right: 30px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 500ms ease;
+}
+
+header nav a:hover{
+    background-color: rgba(255, 217, 0, 0.445);
+    transform: scale(1.3);
+}
+
+h1{
+    color:orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: underline;
+    text-shadow:2px 2px tomato;
+    font-size:3em;
+    text-align: center;
+}
+
+h2{
+    color:rgb(250, 155, 92);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: underline;
+    text-shadow:2px 2px rgb(252, 255, 56);
+    font-size:2.5em;
+    text-align: center;
+}
+
+h3{
+    color:orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: underline;
+    font-size:2em;
+    text-align: center;
+}
+
+p{
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    size: 1em;
+    text-align: center;
+}
+
+#paint3d p{
+    text-align: center;
+}
+
+#paint3d{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+#paint3d img{
+    width:  300px;
+    height: 300px;
+}
+
+figcaption{
+    display: none;
+}
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: yellow;
+}
+
+body{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(90deg,rgb(153, 0, 0),hsl(2, 100%, 65%));
+}
+
+#welcome_section{
+    margin: 0px;
+    text-align: center;
+    display: block;
+    padding: 5% 0 0 0; 
+}
+
+#profile-link{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px; 
+    background-image: url(../../images/Web_Head.png);
+    background-size: 100% 100%;
+}
+
+#profile-link a {
+    color: white;
+    line-height: 50px;
+}
+
+#profile-link a:hover {
+    margin-left: 10px;
+    transform: scale(1.8);
+    border-radius: 50px;
+    transition: all 500ms ease;
+}
+
+.icon{
+    max-width: 20px;
+}
