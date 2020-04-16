@@ -1,3 +1,4 @@
+/* mobile phone view */
 @media screen and (max-width: 350px) {
 body{
     background: rgb(231, 0, 0);
@@ -34,17 +35,6 @@ p{
     margin: 5px;
 }
 
-#submit{
-    background: red !important;
-    color: white !important;
-    padding: 20px;
-    text-align: center;   
-}
-
-#clothes{
-    border-style: dashed;
-}
-
 input{
     display: block;
     margin-left: auto;
@@ -54,11 +44,11 @@ input{
 #gender p{
     text-decoration: none !important;
 }
-
-
 }
+
+/* Computer view */
 body{
-    background: rgb(231, 0, 0);
+    background: rgb(110, 0, 0);
     font-family: Lobster, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 25px;
     letter-spacing: 3px;
@@ -86,8 +76,8 @@ p{
     right: 20%;
     float: centre;
     background: 
-        linear-gradient(red, transparent),
-        linear-gradient(to top right, blue, transparent);
+        linear-gradient(rgb(185, 0, 0), transparent),
+        linear-gradient(to top right, rgb(0, 0, 182), transparent);
     background-blend-mode: screen;
     margin: 5px;
     display:inline-flex;
@@ -113,7 +103,7 @@ p{
 }
 
 #submit{
-    background: red;
+    background: rgb(150, 0, 0);
     color: white;
     padding: 20px;
     text-align: center;
@@ -131,4 +121,13 @@ textarea{
 .input[type='checkbox']{
     text-decoration: none;
     color: blue;
-}*/
+}
+
+#info{
+    font-size: 10px;
+}
+
+#monster{
+    color:black;
+    font-size: 50px;
+}
