@@ -1,27 +1,98 @@
-/* mobile phone view */
-@media only screen and (max-device-width: 480px) {
-    #projects figcaption{
-        display: block !important; /* block instead of 3 columns */
-    }
-  }
+/* scrollbar */
+body::-webkit-scrollbar {
+    width:16px
+}
 
-/* General body, just show in projects*/
+body::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom,rgb(0, 48, 182),rgba(0, 108, 231, 0.541));
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:#c3fafa;
+    border-radius:16px;
+    border:4px solid #fff
+}
+
+body::-webkit-scrollbar-button {display:none}
+
+
+/* General body*/
 body{
-    background-color: rgb(1, 0, 80);
-    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(to bottom,rgb(0, 48, 182),rgba(0, 108, 231, 0.541));
 }
 
+/* These are some of my projects
+   Java
+   About me
+   Let's work together... 
+*/
+h2{
+    text-align: center;
+    color: rgb(115, 164, 255);
+    font-size: 45px;
+    background: linear-gradient(to right, #0b028f, #1404f7, #2196f3, #65baff);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+
+/* Projects in Java */
+h3{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-top: 3px;
+}
+
+.details{
+    margin: 20% 20%;
+    text-align: center;
+}
+
+/* h2 effect */
+.cssTyping h2 {
+    text-align: center;
+    border-right: .30em solid rgb(0, 17, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .70em solid  rgb(0, 17, 255);
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+}
+
+
 /* Header with name and menu */
 header{
+    z-index: +1;
     position: fixed;
     background-image: linear-gradient(to bottom, #17009b, rgba(6, 194, 194, 0.541));
-    margin: -10px 15px 20px -10px;
+    margin: -200px 15px 20px -10px;
     padding: 10px;
     width: 100%;
 }
 
+/* Menu name */
 header .name{
     color: rgb(0, 3, 172);
     text-shadow: -4px 3px 0 #8affff83;
@@ -38,7 +109,7 @@ header .name:hover{
     transition: all 500ms ease;
 }
 
-/* Menu nav */
+/* Menu links */
 header nav{
     list-style: none;
     color: white;
@@ -47,10 +118,10 @@ header nav{
     line-height: 100px;
 }
 
-/* Menu links */
 header nav a{
     display: inline-block;
-    text-shadow: -3px 3px 0 #0036e6a6;
+    color: rgb(0, 3, 172);
+    text-shadow: -2px 3px 0 #8affff83;
     text-decoration: none;
     padding-right: 30px;
     line-height: normal;
@@ -65,42 +136,19 @@ header nav a:hover{
     transform: scale(1.3);
 }
 
-/* Submenu to be added */
-header nav ul{
+
+/* Presentation */
+.card img{
     display: none;
 }
 
-#project_list:hover ul{
-    display: block;
-}
 
-/* About me */
-#welcome_section{
-    margin: 3px 10px 3px 10px;
-    border: none;
-    display: block;
-    padding: 3% 1% 1% 1%;
-    background-image: linear-gradient(to bottom, #17009b, rgba(0, 108, 231, 0.541));
-}
-
-#welcome_section p{
-    text-align: justify;
-}
-
-#welcome_section a:link, a:visited{
-    color: white;
-    text-decoration: none;
-}
-
-#welcome_section a:hover{
-    color: red;
-}
-
-/* Projects in general */
+/* Projects (Java) */
 #projects{
     display: block;
+    clear: both;
     text-align: center;
-    padding: 8% 0 0 0;
+    padding: 2% 0 1% 0;
 }
 
 #projects img, video{
@@ -109,25 +157,527 @@ header nav ul{
     box-shadow: 0 10px 20px rgb(0, 255, 255);
 }
 
-#projects figcaption{
-    display: none;
+.projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80vw;
+    height: 100vh;
+    margin-left: 6vw;
+    margin-bottom: 6vw;
 }
 
-/* Let's work together... */
+.box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    will-change: transform;
+}
+
+.box:hover .cover {
+    -webkit-transform: translateY(-14px) scale(1.04);
+            transform: translateY(-14px) scale(1.04);
+}
+
+.cover {
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    will-change: transform;
+}
+
+.cover img {
+    size: 10%;
+    -webkit-transition: all 260ms ease-in-out;
+    transition: all 260ms ease-in-out;
+	min-width: 250px;
+	max-height: 450px;
+}
+
+.box .cover::after {
+    content: "";
+    z-index: -99;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    display: block;
+    width: 160px;
+    height: 214px;
+    opacity: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 160px 214px;
+    -webkit-filter: blur(24px);
+            filter: blur(24px);
+    -webkit-transition: all 260ms ease-in-out;
+    transition: all 260ms ease-in-out;
+    will-change: transform;
+    -webkit-transform: scale(.6);
+            transform: scale(.6);
+}
+
+.box:hover .cover::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+button {
+    cursor: pointer;
+    outline: 0;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #2C3138;
+    margin-top: 40px;
+    overflow: hidden;
+    -webkit-transform: scale(.7);
+            transform: scale(.7);
+}
+
+button::after {
+    content: "";
+    position: relative;
+    top: -40px;
+    display: block;
+    width: 48px;
+    height: 107%;
+    background-color: #000;
+    margin-top: -1px;
+    margin-left: -7px;
+    border-radius: 6px 0 0 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button::before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 46px;
+    margin-left: -7px;
+    margin-top: -1px;
+    -webkit-transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1.25);
+    transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1.25);
+}
+
+.box:hover button::before {
+    width: 120%;
+    opacity: .8;
+    background-color: rgb(218, 229, 253);
+}
+
+
+.box:hover button div::before {
+    color: #fff;
+}
+
+.box-1 button div::before {
+    content: 'Draw';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: rgb(252, 253, 253);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-1 button {
+    border: 1px solid rgb(142, 178, 255);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-1 button::after {
+    content: "";
+    background-color: #fff;
+    top: -85px
+}
+
+
+.box-2 button div::before {
+    content: 'Arduino';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: #00BF9C;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+
+.box-2 button {
+    border: 1px solid rgb(142, 178, 255);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-2 button::after {
+    content: "";
+    background-color: #00BF9C;
+    top: -85px
+}
+
+
+.box-3 button div::before {
+    content: 'Portafolio';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: rgb(8, 12, 247);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-3 button {
+    border: 1px solid rgb(142, 178, 255);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-3 button::after {
+    content: "";
+    background-color: rgb(8, 12, 247);
+    top: -85px
+}
+
+
+.box-4 button div::before {
+    content: 'Thecnical';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: rgb(185, 184, 184);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-4 button {
+    border: 1px solid rgb(142, 178, 255);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-4 button::after {
+    content: "";
+    background-color: rgb(185, 184, 184);
+    top: -85px
+}
+
+
+.box-5 button div::before {
+    content: 'Tribute';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: rgb(4, 126, 103);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-5 button {
+    border: 1px solid rgb(4, 126, 103);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-5 button::after {
+    content: "";
+    background-color: rgb(4, 126, 103);
+    top: -85px
+}
+
+
+.box-6 button div::before {
+    content: 'Product';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: rgb(10, 247, 30);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-6 button {
+    border: 1px solid rgb(10, 247, 30);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-6 button::after {
+    content: "";
+    background-color: rgb(10, 247, 30);
+    top: -85px
+}
+
+
+.box-7 button div::before {
+    content: 'To Do';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: rgb(191, 0, 150);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-7 button {
+    border: 1px solid rgb(191, 0, 150);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-7 button::after {
+    content: "";
+    background-color: rgb(191, 0, 150);
+    top: -85px
+}
+
+
+.box-8 button div::before {
+    content: 'Favorites';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: rgb(145, 6, 138);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-8 button {
+    border: 1px solid rgb(145, 6, 138);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-8 button::after {
+    content: "";
+    background-color: rgb(145, 6, 138);
+    top: -85px
+}
+
+
+.box-9 button div::before {
+    content: 'Survey';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: rgb(247, 6, 58);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-9 button {
+    border: 1px solid rgb(247, 6, 58);
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-9 button::after {
+    content: "";
+    background-color: rgb(247, 6, 58);
+    top: -85px
+}
+
+#slide{
+    grid: 2fr;
+}
+
+
+/* Java Projects */
+.java {
+    display: inline-block;
+    clear: both;
+    background: linear-gradient(to bottom,rgb(0, 48, 182),rgba(0, 108, 231, 0.541));
+    text-align: center;
+    padding: 2em 0 5em 0;
+    height: 30%;
+    max-width: 550px;
+    margin: 1% 0 5% 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.java .slides {
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+  
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+}
+
+.java  .slides li {
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
+.java  li img {
+    width:  200px;
+    height: 200px;
+}
+
+.java  li q {
+    max-width: 90%;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 0; 
+}
+
+/* Slide */
+.java .slidesNavigation {
+    display: block;
+    list-style: none;
+    text-align: center;
+    bottom: 1em;
+    position: absolute; 
+    width: 104px;
+    left: 50%; 
+    margin-left: -52px;
+}
+
+.java input {
+    display: none;
+}
+  
+.java .slidesNavigation label {
+    float: left;
+    margin: 8px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 2px #041dff;
+    font-size: 0;
+}
+  
+/* Radio position */
+#radio-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#radio-2:checked ~ .slides {
+    transform: translateX(-25%);
+}
+
+#radio-3:checked ~ .slides {
+    transform: translateX(-50%);
+}
+
+#radio-4:checked ~ .slides {
+    transform: translateX(-75%);
+}  
+ 
+/* Hand pointer */
+.java  .slidesNavigation label:hover {
+     cursor: pointer;
+}
+
+/* Radio to move inside java projects */
+.java  #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.java  #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.java  #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.java  #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 { 
+    background: #2980b9;
+}
+
+/* About box */
+#about{
+    clear: both;
+    border: none;
+    display: block;
+    padding: 5%;
+    background-image: linear-gradient(to bottom, #17009b, rgba(0, 108, 231, 0.541));
+}
+
+#text_about{
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: white;
+    text-decoration-line: none;
+}
+
+#text_about a:hover{
+    color: red;
+}
+
+
+/* Text to hide (javascript) */
+.hide { 
+    display: none; 
+}
+
+.visible { 
+    display: inline; 
+}
+
+
+/* Contact */
 #profile-link{
+    clear: both;
     text-align: center;
     font-weight: bold; 
     margin: 3px 10px 3px 10px;
-    box-shadow: 0 0 15px #ddd;
     display: block;
-    background-image: linear-gradient(to bottom, #17009b, rgba(0, 108, 231, 0.541));
     padding: 3% 1% 1% 1%;
 }
 
 #profile-link a {
     line-height: 50px;
     color: white;
-    text-align: center !important;
+    text-align: center;
 }
 
 #profile-link a:hover {
@@ -137,42 +687,186 @@ header nav ul{
     transition: all 500ms ease;
 }
 
-.icon{
-    max-width: 20px;
+#profile-link img {
+    width: 3%;
+    height: 3%;
 }
 
-hr.style {
-    height: 10px;
-    border: 1;
-    box-shadow: inset 0 9px 9px -3px rgb(0, 0, 0);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    margin: 30px;
+
+/* First letter bigger */
+#first:first-letter {
+    float: left;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
 }
 
-/* Hi, I am Cristina */
-h1{
-    text-align: center;
-    color: aliceblue;
-    font-size: 50px;
-    line-height: 50px;
-}
+/* Small screen like mobile phone */
+@media only screen and (min-width: 1100px) {
+    /* header */
+    header{
+    margin: -10px 15px 20px -10px;
+    padding: 10px;
+    width: 100%;
+    }
 
-/* About me / These are some of my projects / Let's work together... */
-h2{
-    text-align: center;
-    color: rgb(115, 164, 255);
-    font-size: 45px;
-}
+    /* Card */
+    .card h3 {
+        font-size: 26px;
+        font-family: 'Amatic SC', cursive;
+        color: black;
+    }
 
-/* All the projects */
-h3{
-    text-align: center;
-    text-decoration: underline;
-    color: white;
-    font-size: 45px;
-    margin-top: 3px;
+    /* Card */
+    .card {
+        clear: both;
+        color: #013863;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 300px;
+        height: 400px;
+        background: #e0e1dc;
+        transform-style: preserve-3d;
+        transform: translate(-50%,-50%) perspective(2000px);
+        box-shadow: inset 300px 0 50px rgba(177, 0, 0, 0.5), 20px 0 60px rgba(248, 100, 2, 0.5);
+        transition: 1s;
+        margin-bottom: 20%;
+    }
+
+    .card:hover {
+        transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2);
+        box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+    }
+
+    .card:before {
+        content:'';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: rgb(154, 189, 255);
+        transform-origin: bottom;
+        transform: skewX(-45deg);
+    }
+
+    .card:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -5px;
+        width: 5px;
+        height: 100%;
+        background: rgb(154, 189, 255);
+        transform-origin: left;
+        transform: skewY(-45deg);
+    }
+
+    .card img{
+        display: inline;
+    }
+
+    .card .imgBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-origin: left;
+        transition: .7s;
+    }
+
+    .card .bark {
+        position: absolute;
+        background: #e0e1dc;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .7s;
+    }
+
+    .card .imgBox img {
+        min-width: 250px;
+        max-height: 400px;
+    }
+
+    .card:hover .imgBox {
+        transform: rotateY(-135deg);
+    }
+
+    .card .imgBox img {
+        min-width: 300px;
+        max-height: 400px;
+    }
+
+    .card:hover .imgBox {
+        transform: rotateY(-135deg);
+    }
+
+    .card:hover .bark {
+        opacity: 1;
+        transition: .6s;
+        box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+    }
+
+    .card .details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 0 0 10px;
+        z-index: -1;
+        margin-top: 70px;
+    }
+
+    .card .details p {
+        font-size: 15px;
+        line-height: 15px;
+        transform: rotate(-8deg);
+        padding: 1 0 0 20px;
+        color: black;
+    }
+
+    .presentation{
+        display: block;
+        padding-top: 25%;
+    }
+
+    #projects{
+        padding: 20% 0 0 0;
+    }
+
+    .java {
+        margin: 10% 0 3% 0;
+    }
+
+    
+    /* courses */
+    .container {
+        width:95%; 
+        height:650px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-left:15px; 
+        padding-right:15px;
+    }
+    
+    .left{ 
+        float:left; 
+        width:50%;  
+        background: linear-gradient(to bottom,rgb(0, 48, 182),rgba(0, 108, 231, 0.541));
+        border:solid black; 
+        box-sizing: content-box;
+        padding: 2%;    
+    } 
+     
+    #right { 
+        float:right; 
+        width:35%; 
+        background: linear-gradient(to bottom,rgb(0, 48, 182),rgba(0, 108, 231, 0.541));
+        border:solid black;
+        box-sizing: content-box; 
+        padding: 2%;
+    }
+    
 }
