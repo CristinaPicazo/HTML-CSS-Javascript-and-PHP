@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: radial-gradient(circle, rgba(36,0,0,0) 0%, rgba(243,255,81,0.42930675688244047) 26%, rgba(255,127,0,0.4741246840533089) 100%);
+    font-size: 90%;
+}
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 7.5em;
+}
+
+/* Menu names */
+.sectionsName{
+    position: relative;
+    top:0;
+    text-align: center;
+    border: 1px black;
+    color: white;
+    width: 60%;
+    float: right;
+    margin: 0;   
+}
+
+#starters_Name{
+    background: #F1C40F;
+    font-size: 2.5em;
+}
+
+#main_Name{
+    background: #C0392B;
+    font-size: 2.5em;
+}
+
+#dessert_Name{
+    background: #EC407A;
+    font-size: 2.5em;
+}
+
+/* Inside each menu */
+.inside_box{
+    padding: 10%;
+    margin-top: 50px;
+}
+
+/* Box including name and menu */
+.boxes{
+    border: 2px solid black;
+    padding-left: 1%;
+    margin: 2%;
+}
+
+/* All sections */
+.menu_box{
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+/* 4. Desktop */
+@media screen and (min-width: 992px) {
+    #starters, #main, #dessert {
+        width: 33%;
+        height: 300px;
+        float: left;
+    }
+
+    .menu_box{
+        display: flex;
+    }
+}
+
+/* 4. Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #starters {
+        width: 46%;
+        height: 300px;
+        float: left;
+        /* sección 3 tiene que ocupar todo el ancho */
+    }
+    #main {
+        width: 46%;
+        height: 300px;
+        float: right;
+        /* sección 3 tiene que ocupar todo el ancho */
+    }
+
+    #dessert {
+        width: 96%;
+        height: 300px;
+        float: left;
+        /* sección 3 tiene que ocupar todo el ancho */
+    }
+
+}
+
+/* 4. Mobile */
+@media screen and (max-width: 767px) {
+    #starters, #main, #dessert  {
+        width: 100%;
+        float: left;
+    }
+}
+
