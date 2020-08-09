@@ -1,18 +1,42 @@
+body{
+    background-color: #ddf1ff;
+}
+
 .navbar{
     background-color: #adddff;
 }
-.menu{
-    margin: 5% 20% 0% 20%;
+
+.navbar-brand{
+    font-size: 3em;
 }
 
-#chicken{
+h1{
+    font-size: 5em;
+    margin-top: 5%;
+}
+
+.menu{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#chicken, .chicken{
     background-color: #ff9a5f;
 }
 
-#beef{
+#beef, .beef{
     background-color: #ff6f6a;
 }
 
-#sushi{
+#sushi, .sushi{
     background-color: #7fc5f7;
 }
+
+ul {
+    list-style-type: none;
+}
+
+.top{
+    color: black;
+}
+
