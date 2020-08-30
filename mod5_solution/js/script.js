@@ -62,8 +62,6 @@ var switchMenuToActive = function () {
 
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
-// On page load (before images or CSS)
-document.addEventListener("DOMContentLoaded", function (event) {
 
 // TODO: STEP 0: Look over the code from
 // *** start ***
@@ -118,7 +116,7 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // var homeHtmlToInsertIntoMainPage = ....
-      chosenCategoryShortName=chooseRandomCategory(categories);
+      chosenCategoryShortName="'"+chosenCategoryShortName+"'";
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
