@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(to right, #304352, #d7d2cc);
+  min-height: 100vh;  
+}
+
+h5, p{
+  color: black;
+}
+
+.navbar{
+    background-color: #001d31;
+}
+
+.presentation{
+    margin-top: 6%;
+    width: 20%;
+    background: linear-gradient(to right, #d7d2cc, #304352);
+}
+
+.card img{
+    margin-top: 2%;
+}
+
+.card btn{
+  background-color: #001d31;
+}
+
+h2{
+    text-align: center;
+    padding-top: 5%;
+}
+
+/* Carousel */
+.carousel{
+    width: 80% !important;
+}
+
+.carousel-item {
+    -webkit-perspective: initial;
+    perspective: initial;
+}
+
+.carousel-item img {
+    padding: 3rem;
+}
+
+/* About me */
+.coursesMenu{
+    margin-left: 5%;
+    padding:5px;
+}
+
+.courses{
+    height:400px;
+    overflow-y: visible;
+    padding:5px; 
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .rounded-nav {
+      border-radius: 50rem !important;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .rounded-nav .nav-link {
+      border-radius: 50rem !important;
+    }
+  }
+  
+  /* With arrow tabs */
+  
+  .with-arrow .nav-link.active {
+    position: relative;
+  }
+  
+  .with-arrow .nav-link.active::after {
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #2b90d9;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+  }
+  
+  .nav-pills .nav-link {
+    color: #555;
+  }
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  
