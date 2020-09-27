@@ -12,17 +12,13 @@ h5, p{
 }
 
 .presentation{
-    margin-top: 6%;
-    width: 20%;
-    background: linear-gradient(to right, #d7d2cc, #304352);
+  width: 60%;
+  background: linear-gradient(to right, #d7d2cc, #304352);
+  margin: 20%;
 }
 
 .card img{
     margin-top: 2%;
-}
-
-.card btn{
-  background-color: #001d31;
 }
 
 h2{
@@ -32,7 +28,7 @@ h2{
 
 /* Carousel */
 .carousel{
-    width: 80% !important;
+  margin: 1% 3% !important;
 }
 
 .carousel-item {
@@ -69,6 +65,13 @@ h2{
 @media (min-width: 576px) {
     .rounded-nav {
       border-radius: 50rem !important;
+    }
+    .presentation {
+      width: 20%;
+      margin: 10%;
+  }
+    .carousel{
+      margin: 10% !important;
     }
   }
   
