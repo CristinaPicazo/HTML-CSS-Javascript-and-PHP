@@ -38,49 +38,16 @@ h2{
 
 .carousel-item img {
     padding: 3rem;
-}
-
-/* About me */
-.coursesMenu{
-    margin-left: 5%;
-    padding:5px;
+    width:640px;
+    height:360px;
 }
 
 .courses{
     height:400px;
     overflow-y: visible;
-    padding:5px; 
     border: 1px solid #ccc;
 }
 
-
-
-
-
-
-
-
-
-
-@media (min-width: 576px) {
-    .rounded-nav {
-      border-radius: 50rem !important;
-    }
-    .presentation {
-      width: 20%;
-      margin: 10%;
-  }
-    .carousel{
-      margin: 10% !important;
-    }
-  }
-  
-  @media (min-width: 576px) {
-    .rounded-nav .nav-link {
-      border-radius: 50rem !important;
-    }
-  }
-  
   /* With arrow tabs */
   
   .with-arrow .nav-link.active {
@@ -105,4 +72,23 @@ h2{
   .text-uppercase {
     letter-spacing: 0.1em;
   }
+
+
+@media (min-width: 576px) {
+    .rounded-nav {
+      border-radius: 50rem !important;
+    }
+    .presentation {
+      width: 20%;
+      margin: 10%;
+  }
+    .carousel{
+      margin: 10% !important;
+    }
+  }
   
+  @media (min-width: 576px) {
+    .rounded-nav .nav-link {
+      border-radius: 50rem !important;
+    }
+  }
