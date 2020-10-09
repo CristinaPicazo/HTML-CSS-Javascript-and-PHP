@@ -3,244 +3,314 @@
 
 <head>
     <!-- Language and name -->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Personal Portafolio Cristina" content="Portfolio with different Web Pages using on html and css">
     <title>Personal Portafolio Cristina</title>
     <!-- External links -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/Personal_Portfolio_Webpage.css" />
-    <script language="JavaScript" type="text/javascript" src="script/Personal_Portfolio_Webpage.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Personal_Portfolio_Webpage2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script language="JavaScript" type="text/javascript" src="js/Personal_Portfolio_Webpage.js"></script> -->
     <noscript><h1>JavaScript is not activated</h1></noscript>
     <link rel="icon" href="images/cpm.png" type="image/x-icon type">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+     <link rel="icon" href="images/cpm.png" type="image/x-icon type">
+
+    <!-- External font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap');
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Boostrap Link -->
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-    <!--Nav bar-->
-    <header>           
-            <div class="name">Cristina Picazo Merlos</div>
-            <nav id="navbar">
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#profile-link">Contact</a>
-            </nav>
-    </header>
+<body class="morpheus-den-gradient color-block mb-3 mx-auto rounded-circle z-depth-1-half"
+       data-spy="scroll" data-target=".navbar" data-offset="30">
+<!--Nav bar-->
+<header>        
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Cristina Picazo Merlos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">
+                    <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">
+                    <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">
+                    <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">
+                      <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">Contact</a>
+                </li>
+              </ul><!-- #nav-list -->
+            </div><!-- .collapse .navbar-collapse -->
+          </nav>
+  </header>
 
-   <!--Presentation-->
-   <section>        
-            <div class="card">
-                <div class="imgBox">
-                    <div class="bark"></div> 
-                    <img src="images/paisajeConSol.png">
-                </div>
-                
-                <div class="details">
-                    <h3>Welcome</h3>
-                    <h3>My name is Cristina</h3><br>
-                    <p>In order to practice what I have learned I have made this website showing some of my projects with the hope to start working as a 
-                        programmer in the near future.</p>
-                </div>
-            </div>
-    </section>
-    <div class="presentation"></div>
-
-
-
-    <!--All projects in 3 columns-->
-    <section id="projects">
-        <div class="cssTyping">
-            <h2>Some of my Projects</h2>
-        </div>
-            <div class="projects">
-                <div class="box box-1">
-                    <a href="Draw_Diary/index.html" target="_blank">
-                    <div class="cover"><img src="images/noche.png" alt=""></div>
-                    <button><div></div></button>
-                </div></a>
-
-                <div class="box box-2">
-                    <a href="Arduino/index.html" target="_blank">
-                    <div class="cover"><img src="images/Arduino.png" alt=""></div>
-                    <button><div></div></button>
-                </div></a>
-
-                <div class="box box-3">
-                    <a href="Personal Portfolio Webpage/index.html" target="_blank">
-                    <div class="cover"><img src="images/Personal_Portfolio_Webpage.jpg" alt=""></div>
-                    <button><div></div></button>
-                </div></a>
-
-                <div class="box box-4">
-                    <a href="Technical Documentation Page/index.html" target="_blank">
-                    <div class="cover"><img src="images/Technical_Documentation_Page.jpg" alt=""></div>
-                    <button><div></div></button>
-                </div></a> 
-
-                <div class="box box-5">
-                    <a href="Tribute Page/index.html" target="_blank">
-                    <div class="cover"><img src="images/Tribute_Page.jpg" alt=""></div>
-                    <button><div></div></button>
-                </div></a>
-
-                <div class="box box-6">
-                    <a href="Product Landing Page/index.html" target="_blank">
-                    <div class="cover"><img src="images/Product_Landing.jpg" alt=""></div>
-                    <button><div></div></button>
-                </div></a> 
-
-                <div class="box box-7">
-                    <a href="ToDo/index.html" target="_blank">
-                    <div class="cover"><img src="images/ToDo.jpg" alt=""></div>
-                    <button><div></div></button>
-                </div></a>  
-
-                <div class="box box-8">
-                    <a href="My Favorites/index.html" target="_blank">
-                    <div class="cover"><img src="images/My_Favorites.jpg" alt=""></div>
-                    <button><div></div></button>
-                </div></a>
-
-                <div class="box box-9">
-                    <a href="Survey Form/index.html" target="_blank">
-                    <div class="cover"><img src="images/Survey_Form.jpg" alt=""></div>
-                    <button><div></div></button></a>
-                </div>
-            </div>
-
-<section id="java">            
-        <div>   
-                    <div class="java">
-                        <h2>Java</h2>						
-                        <input type="radio" name="slides" id="radio-1" checked>
-                        <input type="radio" name="slides" id="radio-2">
-                        <input type="radio" name="slides" id="radio-3">
-                        <input type="radio" name="slides" id="radio-4">
-                        <ul class="slides">
-                             <li class="slide">
-                        <p>
-                           <h3>Race (Greenfoot)</h3> 
-                            <span class="cName">
-                                <a href="https://www.greenfoot.org/scenarios/25818" target="_blank">
-                                <img class="greenfoot" id="greenfoot" src="images/javaRace.jpg" alt="Greenfoot Project - Race" title="Greenfoot Project - Race"></a>
-                            </span>
-                        </p>
-                       </li>        
-                        <li class="slide">
-                          <p>
-                            <h3>Student Profile (GitHub)</h3> 
-                            <span class="cName">
-                                <a href="https://github.com/CristinaPicazo/Java/tree/master" target="_blank">
-                                <img class="Student" id="Student" src="images/Student.png" alt="Student Profile" title="Student Profile"></a>
-                            </span>
-                          </p>
-                       </li>
-                      <li class="slide">
-                         <p>
-                            <h3>Car in Garage (GitHub)</h3> 
-                            <span class="cName">
-                                <video width="320" height="240" controls>
-                                <source src="video/JavaGarage.mp4" type="video/mp4" class="JavaGarage" id="JavaGarage" alt="Car in garage" title="Car in garage"></a>
-                            </span>
-                         </p>
-                      </li>
-                        </ul>
-                        <div class="slidesNavigation">
-                            <label for="radio-1" id="dotForRadio-1"></label>
-                            <label for="radio-2" id="dotForRadio-2"></label>
-                            <label for="radio-3" id="dotForRadio-3"></label>
-                        </div>
-            </div>
-</section>  
-
-<section>   
-    <div id="about">
-        <div class="cssTyping">
-        <h2>About me</h2> 
-        </div>
-        <div id="text_about">
-            <p id="first">I have always liked computers but it was only a few years ago that I decided to study what I really enjoy. One day I 
-            discovered a podcast about a bootcamp where lorry drivers were doing an online course. Every week the teacher made a
-            podcast interviewing his students to check their progress and feelings. In that moment it dawn on me that the reason 
-            I enjoyed the podcast so much was because I shared their aspiration of becoming a software developer. So I started planning 
-            how to achieve my goal, while keeping my administrative job.<br><div id="aditional" class="hide">
- 
-            As a Spanish person living abroad (in Northern Ireland), having the right certificates was a barrier to enrolling any higher 
-            certificate course. I got my A levels and Higher National Certificate in Financial Business in Spain, and those certificates 
-            are not transferrable to UK education scheme, so I couldn´t use them to enroll the courses I needed in UK. Therefore, I 
-            decided to take an online Higher National Certificate in computer´s software in Spain, specifically for Development of 
-            Multi-Platform Applications.<br> 
-            I decided to follow the typical path and take all the subjects of the first year. Then I realized the workload was too high 
-            to balance it with work. The online training did not work well for anyone. The majority of students couldn´t manage to follow
-            the pace of the course, and some teachers lacked the training required to impart the subjects online.  After finishing my 
-            first year I managed to pass 2 subjects, which did not fulfil my expectations. I also realized that it would very hard to 
-            manage travelling to Spain to take the exams, so I decided not to continue with this course and take a different approach. 
-            I started some online courses to get the basics of multiplatform programming and decided to retake the higher certificate 
-            in Development of Multi-Platform Applications in the future.</p><br>
-            
-            <div class="container">                 
-                <div class="left">
-                    <p>Given that the course covered HTMS, CSS, PHP, SQL, C# and Java, I started with some certificated courses to complement those 
-                        areas, such as:<br></p>                    
-                    <ul>
-                        <li><a href="https://www.sololearn.com/" target="_blank">SoloLearn</a>, where I have learned the basics of:</li>
-                        <ul>
-                            <li>SQL Fundamentals</li>
-                            <li>Java Tutorial</li>
-                            <li>C# Tutorial</li>
-                            <li>JavaScript Tutorial</li>
-                            <li>HTML Fundamentals</li>
-                            <li>PHP Tutorial</li>
-                        </ul>
-                        <li><a href="https://www.freecodecamp.org/derezade" target="_blank">FreeCodeCamp</a>, which I found very useful and I would recommend to everybody.</li>
-                        <ul>
-                            <li>Responsive Web Design Certification (300 hours)</li>
-                            <li>JavaScript Algorithms and Data Structures Certification (on-going)</li>
-                        </ul>
-                        <li><a href=""https://www.edx.org/ target="_blank">EDX</a> course in Java organised by Universidad Carlos III de Madrid.</li>
-                        <ul>
-                            <li>IT.1.1-ESx: Introduction to programming with Java: programming basics</li>
-                            <li>IT.1.2-ESx: Introduction to programming with Java: best practice in coding (on-going)</li>
-                        </ul>
-                        <li><a href="https://www.linkedin.com/learning/" target="_blank">Linkedin Learning.</a></li>
-                        <ul>
-                            <li>Become a Java Programmer</li>
-                            <li>GIMP Essential Training</li>
-                            <li>Become a Full-Stack Web Developer</li>
-                        </ul>
-                        <li><a href="https://www.datacamp.com/" target="_blank">DataCamp.</a></li>
-                        <ul>
-                            <li>Web Scraping in Python</li>
-                        </ul>
-                </ul>
-                </div>
-            
-                <div id="right">
-                    <p>I have also used the following resources for self learning purposes:</p>
-                <ul>
-                    <li>Youtube Tutorials</li>
-                    <li>Udemy</li>
-                    <li>W3schools</li>
-                    <li>Greenfoot</li>
-                </ul>
-                </div>
-            </div>
-        </div>
-    </div></div><a id="link_1" href="#text_about" onclick="show(); return false;"> Continue reading</a></div>                  
+  <!--Presentation  mb-3 mx-auto p-2 d-flex justify-content-center-->
+  <section id="home">
+  <div>
+      <div class="card presentation text-center text-light shadow-lg rounded .col-md-3 mx-auto">
+        <img class="card-img-top shadow-lg rounded" src="https://i.ibb.co/FHsFRQR/avatar.jpg" alt="avatar">
+        <div class="card-body .col-xs-3 ">
+        <h5 class="card-title">My name is Cristina</h5>
+        <p class="card-text">In order to practice what I have learned I have made this website showing some of my projects with the hope to start working as a 
+            programmer in the near future.</p>
+        <a href="#about" class="btn btn-primary">About me</a>
+      </div>
+  </div>
 </section>
 
-    <!--Contact-->
-    <div class="linkers">
-    <section id="profile-link" class="linkers">
-        <div class="cssTyping">
-        <h2>Let's work together...</h2>
-        </div>
-        <img src="images/LinkedIn.png" alt="" class="icon">
-        <a href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a" target="_blank">Linkedin</a><br>
-        <img src="images/GitHub-Mark.svg" alt="" class="icon">
-        <a href="https://github.com/CristinaPicazo" target="_blank">GitHub</a><br>
-        <img src="images/gmailimg.png" alt="" class="icon">
-        <a href="mailto:cristina.picazo.merlos@gmail.com" class="btn contact-details">Send a mail</a><br>
-    </section>
+
+<!-- carousel -->
+<section  id="projects" class="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 shadow-lg rounded" src="images/Arduino.png" alt="Arduino">
+        <div class="carousel-caption">
+          <h2 class="bg-white rounded shadow mb-5 p-2"><a href="Arduino/index.html" target="_blank">Arduino (Spanish)</a></h2>
+          <div class="d-none d-md-block">
+            <p class="bg-white rounded shadow mb-5">I have created this website to practise Arduino with him but I am still trying to convince him.</p>
+            </div> <!-- close d-none d-md-block -->
+          </div> <!-- close carousel-caption -->
+    </div> <!-- close carousel-item -->
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/noche.png" alt="Draw Diary">
+      <div class="carousel-caption">
+        <h2 class="bg-white rounded shadow mb-5 p-2"><a href="Draw_Diary/index.html" target="_blank">Draw Diary</a></h2>
+        <div class="d-none d-md-block">
+          <p class="bg-white rounded shadow mb-5">Web to show some of my draws.</p>
+        </div> <!-- close d-none d-md-block -->
+      </div> <!-- close carousel-caption -->
+        </div> <!-- close carousel-item -->
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Personal_Portfolio_Webpage.jpg" alt="Personal Portafolio">
+      <div class="carousel-caption">
+        <h2 class="bg-white rounded shadow mb-5 p-2 carouselTextLeft"><a href="Personal Portfolio Webpage/index.html" target="_blank">Personal Portfolio Webpage</a></h2>
+        <div class="d-none d-md-block"> 
+        <p class="bg-white rounded shadow mb-5 carouselTextLeft">This is a freecodecamp's project.</p>
+      </div> <!-- close d-none d-md-block -->
+    </div> <!-- close carousel-caption -->
+      </div> <!-- close carousel-item -->
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Technical_Documentation_Page.jpg" alt="Technical Documentation">
+      <div class="carousel-caption">
+        <h2 class="bg-white rounded shadow mb-5 p-2 carouselTextLeft"><a href="Technical Documentation Page/index.html" target="_blank">Technical Documentation Page.</a></h2>
+        <div class="d-none d-md-block">  
+        <p class="bg-white rounded shadow mb-5 carouselTextLeft">This is a freecodecamp's project.</p>
+      </div> <!-- close d-none d-md-block -->
+    </div> <!-- close carousel-caption -->
+      </div> <!-- close carousel-item -->
+    
+    <div class="carousel-item">
+    <img class="d-block w-100" src="images/Tribute_Page.jpg" alt="Tribute Page">
+        <div class="carousel-caption">
+          <h2 class="bg-white rounded shadow mb-5 p-2 carouselTextLeft"><a href="Tribute Page/index.html" target="_blank">Tribute Page</a></h2>
+          <div class="d-none d-md-block">
+          <p class="bg-white rounded shadow mb-5 carouselTextLeft">This is a freecodecamp's project.</p>
+        </div> <!-- close d-none d-md-block -->
+      </div> <!-- close carousel-caption -->
+    </div> <!-- close carousel-item -->
+    
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Product_Landing.jpg" alt="Product Landing Page">
+      <div class="carousel-caption">
+        <h2 class="bg-white rounded shadow mb-5 p-2 carouselTextLeft"><a href="Product Landing Page/index.html" target="_blank">Product Landing Page</a></h2>
+        <div class="d-none d-md-block">  
+        <p class="bg-white rounded shadow mb-5 carouselTextLeft">This is a freecodecamp's project.</p>
+      </div> <!-- close d-none d-md-block -->
+    </div> <!-- close carousel-caption -->
+      </div> <!-- close carousel-item -->
+    
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/ToDo.jpg" alt="ToDo List">
+      <div class="carousel-caption">
+        <h2 class="bg-white rounded shadow mb-5 p-2 carouselTextLeft"><a href="ToDo/index.html" target="_blank">ToDo List</a></h2>
+        <div class="d-none d-md-block">    
+      <p class="bg-white rounded shadow mb-5">I have created this webpage to proctise some Javascript but I am still working on it.</p>
+    </div> <!-- close d-none d-md-block -->
+  </div> <!-- close carousel-caption -->
+    </div> <!-- close carousel-item -->
+    
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/My_Favorites.jpg" alt="My Favorites">
+      <div class="carousel-caption">
+        <h2 class="bg-white rounded shadow mb-5 p-2 carouselTextLeft"><a href="My Favorites/index.html" target="_blank">My Favorites</a></h2>
+        <div class="d-none d-md-block">  
+        <p class="bg-white rounded shadow mb-5">Webpage to practise some lists.</p>
+      </div> <!-- close d-none d-md-block -->
+    </div> <!-- close carousel-caption -->
+      </div> <!-- close carousel-item -->
+  </div> <!-- carousel inner-->
+    
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Survey_Form.jpg" alt="Survey Form">
+      <div class="carousel-caption">
+        <h2 class="bg-white rounded shadow mb-5 p-2 carouselTextLeft"><a href="Survey Form/index.html" target="_blank">Survey Form</a></h2>
+        <div class="d-none d-md-block">  
+        <p class="bg-white rounded shadow mb-5">This is a freecodecamp's project.</p>
+            </div> <!-- close d-none d-md-block -->
+          </div> <!-- close carousel-caption -->
+            </div> <!-- close carousel-item -->
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</section>
+
+
+
+<!-- Courses -->
+  <!-- Bordered tabs-->
+<section id="about">
+  <div class="container py-5">
+    <div class="row mb-5">
+      <div class="col-lg-8 text-white py-4 text-center mx-auto">
+        <h1 class="display-4">Courses and training</h1>
+        <p class="lead mb-0 text-justify d-none d-sm-inline-block">I have always liked computers but it was only a few years ago that I decided to study what I really enjoy. One day I 
+          discovered a podcast about a bootcamp where lorry drivers were doing an online course. Every week the teacher made a
+          podcast interviewing his students to check their progress and feelings. In that moment it dawn on me that the reason 
+          I enjoyed the podcast so much was because I shared their aspiration of becoming a software developer. So I started planning 
+          how to achieve my goal, while keeping my administrative job.<a href="#" class="show_hide" data-content="toggle-text">Read More</a></p>
+
+        <p class="lead mb-0 text-justify d-none d-sm-inline-block">As a Spanish person living abroad (in Northern Ireland), having the right certificates was a barrier to enrolling any higher 
+          certificate course. I got my A levels and Higher National Certificate in Financial Business in Spain, and those certificates 
+          are not transferrable to UK education scheme, so I couldn´t use them to enroll the courses I needed in UK. Therefore, I 
+          decided to take an online Higher National Certificate in computer´s software in Spain, specifically for Development of 
+          Multi-Platform Applications.</p> 
+        
+        <p class="lead mb-0 text-justify d-none d-sm-inline-block">I decided to follow the typical path and take all the subjects of the first year. Then I realized the workload was too high 
+          to balance it with work. The online training did not work well for anyone. The majority of students couldn´t manage to follow
+          the pace of the course, and some teachers lacked the training required to impart the subjects online.  After finishing my 
+          first year I managed to pass 2 subjects, which did not fulfil my expectations. I also realized that it would very hard to 
+          manage travelling to Spain to take the exams, so I decided not to continue with this course and take a different approach. 
+          I started some online courses to get the basics of multiplatform programming and decided to retake the higher certificate 
+          in Development of Multi-Platform Applications in the future.</p>
+      </div>
+  </div>
+  <div class="p-5 bg-white rounded shadow mb-5">    
+    <ul id="coursesResume" role="tablist" class="nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center">
+      <li class="nav-item flex-sm-fill">
+        <a id="courses-tab" data-toggle="tab" href="#courses" role="tab" aria-controls="courses" aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border active">Courses</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="resources-tab" data-toggle="tab" href="#resources" role="tab" aria-controls="resources" aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border">Other resources</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="webinars-tab" data-toggle="tab" href="#webinars" role="tab" aria-controls="webinars" aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0 border">Webinars</a>
+      </li>
+    </ul>
+    <div id="coursesResumeContent" class="tab-content">
+      <div id="courses" role="tabpanel" aria-labelledby="courses-tab" class="tab-pane fade px-4 py-5 show active">
+        <p class="leade font-italic">Given that the course covered HTMS, CSS, PHP, SQL, C# and Java, I started with some certificated courses to complement those areas, such as:</p>
+        <ul>
+            <li><a href="https://www.sololearn.com/" target="_blank">SoloLearn</a>, where I have learned the basics of:</li>
+            <ul>
+                <li>SQL Fundamentals</li>
+                <li>Java Tutorial</li>
+                <li>C# Tutorial</li>
+                <li>JavaScript Tutorial</li>
+                <li>HTML Fundamentals</li>
+                <li>PHP Tutorial</li>
+            </ul>
+            <li><a href="https://www.freecodecamp.org/derezade" target="_blank">FreeCodeCamp</a>, which I found very useful and I would recommend to everybody.</li>
+            <ul>
+                <li>Responsive Web Design Certification (300 hours)</li>
+                <li>JavaScript Algorithms and Data Structures Certification (on-going)</li>
+            </ul>
+            <li><a href="" https:="" www.edx.org="" target="_blank">EDX</a> course in Java organised by Universidad Carlos III de Madrid.</li>
+            <ul>
+                <li>IT.1.1-ESx: Introduction to programming with Java: programming basics</li>
+                <li>IT.1.2-ESx: Introduction to programming with Java: best practice in coding (on-going)</li>
+            </ul>
+            <li><a href="https://www.linkedin.com/learning/" target="_blank">Linkedin Learning.</a></li>
+            <ul>
+                <li>Become a Java Programmer</li>
+                <li>GIMP Essential Training</li>
+                <li>Become a Full-Stack Web Developer</li>
+            </ul>
+            <li><a href="https://www.datacamp.com/" target="_blank">DataCamp.</a></li>
+            <ul>
+                <li>Web Scraping in Python</li>
+            </ul>
+        </ul>
+</div>
+      <div id="resources" role="tabpanel" aria-labelledby="resources-tab" class="tab-pane fade px-4 py-5">
+          <p class="leade font-italic">I have also used the following resources for self learning purposes:</p>
+          <ul>
+              <li>Youtube Tutorials</li>
+              <li>Udemy</li>
+              <li>W3schools</li>
+              <li>Greenfoot</li>
+          </ul>
+      </div>
+      <div id="webinars" role="tabpanel" aria-labelledby="webinars-tab" class="tab-pane fade px-4 py-5">
+          <p class="leade font-italic">I have discovered the webinars in the lockdown and since then I join some of them from time to time and try to learn as much as possible:</p>
+          <ul>
+              <li>freecodecamp (every Sunday for four hours)</li>
+              <li>Udemy</li>
+              <li>W3schools</li>
+              <li>Greenfoot</li>
+          </ul>
+      </div>
     </div>
+  </div> <!-- container py-5 -->
+</section>
+
+<section id="contact">
+    <!--Contact-->
+    <div class="container py-5">
+      <div class="row mb-5">
+        <div class="col-lg-7 text-white py-4 text-center mx-auto">
+          <h1 class="display-4">Let's work together...</h1>
+          <p class="lead mb-0">There are a few links to contact me</p>
+        </div>
+      </div>
+        <div class="row list-group align-items-center box">
+          <a class="list-group-item text-center col-6 col-md-4" href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp; Linkedin</a>
+          <a class="list-group-item text-center col-6 col-md-4" href="https://github.com/CristinaPicazo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp; GitHub</a>
+        </div><!--Close icons-->
+    </div><!--Close container-->
+  </section>
+
+
 
 </body>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="script/jquery-3.5.1.slim.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/scriptCopy.js"></script>
 
 </html>
+
