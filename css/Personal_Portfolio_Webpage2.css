@@ -85,6 +85,12 @@ h2{
     .carousel{
       margin: 10% !important;
     }
+
+    .carousel-item img {
+      padding: 3rem;
+      width:800px;
+      height:700px;
+  }
   }
   
   @media (min-width: 576px) {
@@ -92,3 +98,4 @@ h2{
       border-radius: 50rem !important;
     }
   }
+  
