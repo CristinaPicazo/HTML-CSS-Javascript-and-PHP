@@ -43,7 +43,7 @@
                                 Contact</a></li>
                     </ul>
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a id="loginButton">
                             <span class="fa fa-sign-in"></span> Login
                         </a>
                     </span> 
@@ -99,8 +99,8 @@
                         <img src="img/logo.png" class="img-fluid">
                     </div>
                     <div class="col-12 col-sm-3 align-self-center">
-                        <button type="button" class="btn-sm btn-warning btn-lg btn-block"><a class="nav-link text-dark font-weight-bold" href="#Reserve"
-                            data-toggle="modal" data-target="#Reserve">Reserve Table</a></button>
+                        <button type="button" class="btn-sm btn-warning btn-lg btn-block">
+                            <a class="nav-link text-dark font-weight-bold" href="#Reserve" id=reserveButton>Reserve Table</a></button>                                
                     </div>
                 </div>
             </div>
@@ -161,74 +161,13 @@
                         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
+                        <button class="btn btn-danger btn-sm" id="carouselButton">
+                            <span id="carousel-button-icon" class="fa fa-pause"></span>
+                        </button>
                 </div>
              </div>
         </div>
 
-        <div class="container">
-            <div class="row row-content align-items-center">
-                <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                    <h3>Our Lipsmacking Culinary Creations</h3>
-                </div>
-                <div class="col col-sm order-sm-first col-md">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png"
-                            alt="Uthappizza">
-                        <div class="media-body">
-                            <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
-                                different salads, six
-                                enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly
-                                and soft drinks.
-                                All for just $19.99 per person
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-4 order-sm-fist col-md-3">
-                        <h3>This Month's Promotions</h3>
-                    </div>
-                    <div class="col col-sm order-sm-6 col-md">
-                        <div class="media">
-                            <div class="media-body">
-                                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
-                                    different salads, six
-                                    enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly
-                                    and soft drinks.
-                                    All for just $19.99 per person
-                                </p>
-                            </div> <!-- col col-sm order-sm-6 col-md -->
-                                <img class="d-flexmr-3 img-thumbnail align-self-center" src="img/buffet.png"
-                                alt="Buffet">
-                        </div>
-                    </div>
-                </div> <!-- container -->
-
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                        <h3>Meet our Culinary Specialists</h3>
-                    </div>
-                    <div class="col col-sm order-sm-first col-md">
-                        <div class="media">
-                            <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png"
-                                alt="Alberto Somayya">
-                            <div class="media-body">
-                                <h2 class="mt-0">Alberto Somayya</h2>
-                                <h4>Executive Chef</h4>
-                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
-                                    International experience having worked closely with
-                                    whos-who in the culinary world, he specializes in
-                                    creating mouthwatering Indo-Italian fusion experiences.
-                                </p>
-                            </div> <!-- Close media-body -->
-                        </div> <!-- Close media -->
-                    </div> <!-- Close col col-sm order-sm-first col-md -->
-                </div> <!-- Close row row-content align-items-center -->
 
 
                 
@@ -280,7 +219,7 @@
                                     <div class="form-group row">
                                         <label for="telnum" class="col-12 col-md-2 col-form-label">Section</label>
                                         <div class="col-5 col-md-3 btn-group" role="group">
-                                            <button type="button" class="btn btn-secondary form-control bg-success">Non-smoking</button>
+                                            <button type="button" class="btn btn-secondary form-control bg-success active">Non-smoking</button>
                                             <button type="button" class="btn btn-secondary form-control bg-danger">Smoking</button>
                                         </div>
                                     </div>
@@ -307,84 +246,7 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="container" id="Reserve">
-                <div class="row row-content align-items-center">
-                    <div class="col-12 col-sm-8 offset-sm-2">
-                        <div class="card">
-                            <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                            <div class="card-body">
-                                <form>
-                                    <div class="form-group row">
-                                        <label for="telnum" class="col-12 col-md-2 col-form-label">Number of
-                                            Guests</label>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">1</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">2</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio3" value="option3">
-                                            <label class="form-check-label" for="inlineRadio3">3</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio4" value="option4">
-                                            <label class="form-check-label" for="inlineRadio4">4</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio5" value="option5">
-                                            <label class="form-check-label" for="inlineRadio5">5</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio6" value="option6">
-                                            <label class="form-check-label" for="inlineRadio6">6</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="telnum" class="col-12 col-md-2 col-form-label">Section</label>
-                                        <div class="col-5 col-md-3 btn-group" role="group">
-                                            <button type="button" class="btn btn-secondary form-control bg-success">Non-smoking</button>
-                                            <button type="button" class="btn btn-secondary form-control bg-danger">Smoking</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="telnum" class="col-12 col-md-2 col-form-label">Date and Time</label>
-                                        <div class="col-5 col-md-3">
-                                            <input type="text" class="form-control" id="date" name="date"
-                                                placeholder="Date">
-                                        </div>
-                                        <div class="col-5 col-md-3">
-                                            <input type="text" class="form-control" id="time" name="time"
-                                                placeholder="Time">
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group row">
-                                        <div class="offset-md-2 col-md-10">
-                                            <button type="submit" class="btn btn-primary">Reserve</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div> <!-- Close card-body -->
-                        </div> <!-- Close card-body -->
-                    </div> <!-- Close card -->
-                </div> <!-- Close row row-content align-items-center -->
-            </div> 
-        </div>
-    </div> 
+            </div>
 
 
 
@@ -447,5 +309,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+        $("#carouselButton").click(function(){
+    if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+        $("#mycarousel").carousel('pause');
+        $("#carouselButton").children("span").removeClass('fa-pause');
+        $("#carouselButton").children("span").addClass('fa-play');
+    }
+    else if ($("#carouselButton").children("span").hasClass('fa-play')){
+        $("#mycarousel").carousel('cycle');
+        $("#carouselButton").children("span").removeClass('fa-play');
+        $("#carouselButton").children("span").addClass('fa-pause');                    
+    }
+    });
+
+    $("#reserveButton").click(function(){
+        $('#Reserve').modal('show');
+    });
+
+    $("#loginButton").click(function(){
+        $('#loginModal').modal('show');
+    });
+    </script>
 
 </html>
