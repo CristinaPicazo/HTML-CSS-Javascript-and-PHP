@@ -12,7 +12,7 @@ h5, p{
 }
 
 .presentation{
-  width: 60%;
+  width: 80%;
   background: linear-gradient(to right, #d7d2cc, #304352);
   margin: 20%;
 }
@@ -21,78 +21,83 @@ h5, p{
     margin-top: 2%;
 }
 
+
+
 h2{
     text-align: center;
     padding-top: 5%;
 }
 
-/* Carousel */
-.carousel{
-  margin: 1% 3% !important;
+  /* Carousel */
+.carousel .carousel-item {
+  height: 500px;
+}
+.carousel .carousel-item img {
+  position: initial;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 500px;
 }
 
-.carousel-item {
-    -webkit-perspective: initial;
-    perspective: initial;
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
 }
 
-.carousel-item img {
-    padding: 3rem;
-    width:640px;
-    height:360px;
+/* With arrow tabs */
+
+.with-arrow .nav-link.active {
+  position: relative;
 }
 
-.courses{
-    height:400px;
-    overflow-y: visible;
-    border: 1px solid #ccc;
+.with-arrow .nav-link.active::after {
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #2b90d9;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
 }
 
-  /* With arrow tabs */
-  
-  .with-arrow .nav-link.active {
-    position: relative;
-  }
-  
-  .with-arrow .nav-link.active::after {
-    content: '';
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #2b90d9;
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-  }
-  
-  .nav-pills .nav-link {
-    color: #555;
-  }
-  .text-uppercase {
-    letter-spacing: 0.1em;
-  }
+.nav-pills .nav-link {
+  color: #555;
+}
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
 
-
-@media (min-width: 576px) {
+@media (min-width: 680px) {
     .rounded-nav {
       border-radius: 50rem !important;
     }
     .presentation {
-      width: 20%;
+      width: 60%;
       margin: 10%;
   }
 
-    .carousel-item img {
+  .carousel-item img {
       padding: 3rem;
       width:800px;
       height:700px;
   }
+  .rounded-nav .nav-link {
+    border-radius: 50rem !important;
   }
+}
+
+@media (min-width: 960px) {
+  .presentation {
+    width: 40%;
+    margin: 10%;
+}
+
   
-  @media (min-width: 576px) {
-    .rounded-nav .nav-link {
-      border-radius: 50rem !important;
-    }
-  }
+  
+}
   
