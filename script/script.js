@@ -18,5 +18,16 @@ $(document).ready(function(){
        }
       });
 
-    
+    //Pause Carousel
+    $(function(){
+      $('#carousel.slide').carousel({
+          interval: 1000,
+          pause: "hover"
+      });
+  
+      $('input').focus(function(){
+         $("#carousel").carousel('pause');
+      }).blur(function() {
+         $("#carousel").carousel('cycle');
+      });
 });
