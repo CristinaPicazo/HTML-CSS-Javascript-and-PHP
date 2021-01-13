@@ -29,6 +29,7 @@ h2{
 }
 
   /* Carousel */
+
 .carousel .carousel-item {
   height: 500px;
 }
@@ -95,9 +96,7 @@ h2{
   .presentation {
     width: 40%;
     margin: 10%;
-}
-
-  
+}  
   
 }
   
