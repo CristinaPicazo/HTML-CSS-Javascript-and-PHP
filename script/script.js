@@ -4,8 +4,7 @@ $(document).ready(function(){
 
     //flip
     AOS.init({
-      duration: 650,
-      once: true
+      duration: 1200,
     });
 
     //Read more
@@ -22,12 +21,18 @@ $(document).ready(function(){
     $(function(){
       $('#carousel.slide').carousel({
           interval: 1000,
-          pause: "hover"
       });
   
-      $('input').focus(function(){
-         $("#carousel").carousel('pause');
-      }).blur(function() {
-         $("#carousel").carousel('cycle');
-      });
+  });
+
+     //Carousel Menu
+     $('#collapseCarousel').on('click', function () {
+      var text=$('#collapseCarousel').text();
+      if(text === "Read More"){
+        $(this).html('Hide');
+      } else{
+        $(this).text('Menu');
+     }
+    });
+    
 });
