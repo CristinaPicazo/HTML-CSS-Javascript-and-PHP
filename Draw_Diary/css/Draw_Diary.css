@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgb(20, 0, 68), rgb(33, 0, 110));
+    background-image: linear-gradient(rgb(12, 0, 41), rgb(23, 0, 78));
 }
 
 .navbar-brand {
@@ -25,7 +25,38 @@ header nav a:hover{
     left: 0;
     bottom: 0;
     min-height: 100px;
+    z-index: 100;
 }
+
+/* stars */   
+.blink_me {
+    animation: blinker 1s linear infinite;
+    color: rgb(252, 234, 79);
+    font-size: 5px;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+      font-size: 10px;
+      color: white;
+    }
+}
+
+
+#demo {
+    width: 100%;
+    height: 100%;
+  }
+  .stars {
+    position: fixed;
+    background: #f1f1f1;
+    z-index: -1;
+  }
+  
+
+
+
 
 @media (min-width: 576px) {
     /* carousel */
