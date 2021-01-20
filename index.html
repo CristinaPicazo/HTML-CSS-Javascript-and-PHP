@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="portafollio">
 
 <head>
   <!-- Language and name -->
@@ -44,7 +44,6 @@
       <a class="navbar-brand" href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a">Cristina Picazo Merlos</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         id="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -376,7 +375,7 @@
 
   <!-- Courses -->
   <!-- Bordered tabs-->
-  <section id="about">
+  <section id="about" ng-controller='readMore'>
     <div class="container py-5">
       <div class="row mb-5">
         <div class="col-lg-8 text-white py-4 text-center mx-auto">
@@ -390,7 +389,7 @@
             I enjoyed the podcast so much was because I shared their aspiration of becoming a software developer. So I
             started planning
             how to achieve my goal, while keeping my administrative job.</p>
-            <p><a class="btn btn-primary d-none d-sm-inline-block" id="collapseToRead" data-toggle="collapse" href="#collapseToRead" role="button" aria-expanded="false" aria-controls="collapseToRead">Read More</a></p>
+            <p><a class="btn btn-primary d-none d-sm-inline-block" id="collapseToRead" data-toggle="collapse" href="#collapseToRead" role="button" aria-expanded="false" aria-controls="collapseToRead" ng-click="read()">{{readText}}</a></p>
               <div class="collapse" id="collapseToRead">
                 <p class="lead mb-0 text-justify d-none d-sm-inline-block">As a Spanish person living abroad (in Northern
                   Ireland), having the right certificates was a barrier to enrolling any higher
@@ -678,7 +677,7 @@
 <script src="script/script.js"></script>
 <script src="script/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
