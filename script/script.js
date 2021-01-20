@@ -7,32 +7,25 @@ $(document).ready(function(){
       duration: 1200,
     });
 
-    //Read more
-    $('#collapseToRead').on('click', function () {
-        var text=$('#collapseToRead').text();
-        if(text === "Read More"){
-          $(this).html('Hide');
-        } else{
-          $(this).text('Read More');
-       }
-      });
+    (function(){
+      'use strict';
+      
+      angular.module('portafollio',[])
+    .controller('readMore',readMore);
 
-    //Pause Carousel
-    $(function(){
-      $('#carousel.slide').carousel({
-          interval: 1000,
-      });
-  
-  });
+    function readMore($scope){
+      $scope.readText = "Read More";
 
-     //Carousel Menu
-     $('#collapseCarousel').on('click', function () {
-      var text=$('#collapseCarousel').text();
-      if(text === "Read More"){
-        $(this).html('Hide');
-      } else{
-        $(this).text('Menu');
-     }
-    });
-    
-});
+      $scope.read = function(){
+        if($scope.readText === "Read More"){
+          $scope.readText = "Hide";
+          return $scope.readText;
+        }
+        else{
+          $scope.readText = "Read More";
+          return $scope.readText;
+        }
+      }
+    }
+
+    })();
