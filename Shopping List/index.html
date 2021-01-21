@@ -1,0 +1,45 @@
+<!--Cristina Picazo Merlos-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>shopping List</title>
+    <!--import external css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/shopping_list.css" />
+    <!--import external javaScript-->
+    <script language="JavaScript" type="text/javascript" src="script/shopping_list.js"></script>
+    <noscript><h1>JavaScript is not activated</h1></noscript><!--to show in case it is not activated-->
+</head>
+<body>
+    <!--name-->
+    <h1 id="name">Shopping List</h1>
+    <form>
+        <p><!--Categogy-->
+        <label for="category" name="category" id="category">Category</label><br>
+            <select name="category" id="category">
+                <option value="frozen">Frozen Food</option>
+                <option value="meat">Meat </option>
+                <option value="fruit">Fuit</option>
+                <option value="vegetable">Vegetable</option>
+                <option value="other">Other</option>
+            </select><br>
+        </p>
+
+        <p><!--product to type-->
+        <label for="product" name="product" id="product">Product</label><br>
+            <input type="text" name="product" title="product"><br>
+        </p>
+
+        <p><!--amount-->
+        <label for="quantity" name="quantity" id="quantity">Quantity</label><br>
+            <input type="number" name="quantity" title="quantity"><br>
+        </p>
+        <hr>
+
+        <input id="add" type="button" value="Add"><br>
+
+        <button type="submit" value "submit" onclick="total()">Send</button>
+
+</body>
+</html>
