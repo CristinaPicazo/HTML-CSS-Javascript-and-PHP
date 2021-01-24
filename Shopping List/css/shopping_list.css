@@ -1,6 +1,17 @@
+.navbar-brand {
+    text-align: center;
+    width: 100%;
+}
+
+header nav a:hover{
+    background-color: rgba(255, 0, 0, 0.445);
+    transform: scale(1.3);
+}
+
 body{
     background-image: radial-gradient( rgba(253, 202, 249, 0.973), rgb(255, 165, 187), white);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
 }
 
 h1{
@@ -8,27 +19,6 @@ h1{
     font-weight: bold;
     text-align: center;
     text-decoration: double underline;
-}
-
-p{
-    font-size: 20px;
-    padding: 10px;
-}
-
-
-form{
-    display: block;
-    border: 10px;
-    border-color: red;
-    border-style: groove;
-    margin: 5% 30%;
-    text-align: center;
-    padding: 10px;
-}
-
-button{
-    background: red;
-    color: white;
-    padding: 30px;
-    font-size: 20;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
