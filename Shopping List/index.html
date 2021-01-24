@@ -1,45 +1,86 @@
 <!--Cristina Picazo Merlos-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>shopping List</title>
     <!--import external css-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/shopping_list.css" />
-    <!--import external javaScript-->
+    
+    <!--Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> 
     <script language="JavaScript" type="text/javascript" src="script/shopping_list.js"></script>
     <noscript><h1>JavaScript is not activated</h1></noscript><!--to show in case it is not activated-->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css" />
+
+    <!-- Boostrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
+
 <body>
+    <!--Navbar-->
+    <header>
+        <nav class="navbar fixed-top navbar-dark">
+            <a class="navbar-brand" href="https://cristinapicazomerlos.com/">Cristina Picazo Merlos</a>
+        </nav>
+    </header>
+
     <!--name-->
     <h1 id="name">Shopping List</h1>
-    <form>
-        <p><!--Categogy-->
-        <label for="category" name="category" id="category">Category</label><br>
-            <select name="category" id="category">
-                <option value="frozen">Frozen Food</option>
-                <option value="meat">Meat </option>
-                <option value="fruit">Fuit</option>
-                <option value="vegetable">Vegetable</option>
-                <option value="other">Other</option>
-            </select><br>
-        </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 border border-danger">
+                <form role="form">
+                    <div class="form-group">
+                        <!--Categogy-->
+                        <label for="category" name="category" id="category" class="col-md-12">Category</label>
+                            <select class="form-control col-md-10" name="category" id="category">
+                                <option value="frozen">Frozen Food</option>
+                                <option value="meat">Meat </option>
+                                <option value="fruit">Fuit</option>
+                                <option value="vegetable">Vegetable</option>
+                                <option value="other">Other</option>
+                            </select>
+                    </div>
 
-        <p><!--product to type-->
-        <label for="product" name="product" id="product">Product</label><br>
-            <input type="text" name="product" title="product"><br>
-        </p>
+                    <div class="form-group">
+                        <!--product to type-->
+                        <label for="product" name="product" id="product">Product</label><br>
+                        <input class="form-control col-10" type="text" name="product" title="product" required><br>
+                    </div>
 
-        <p><!--amount-->
-        <label for="quantity" name="quantity" id="quantity">Quantity</label><br>
-            <input type="number" name="quantity" title="quantity"><br>
-        </p>
-        <hr>
+                    <div class="form-group">
+                    <!--amount-->
+                    <label for="quantity" name="quantity" id="quantity">Quantity</label><br>
+                        <input class="form-control col-10" type="number" name="quantity" title="quantity" placeholder="1"><br>
+                    </div>
+                    <hr>
 
-        <input id="add" type="button" value="Add"><br>
+                    <div class="form-group">
+                    <button type="button" class="btn btn-success" onclick="add()">Add</button>
+                    </div>
 
-        <button type="submit" value "submit" onclick="total()">Send</button>
-
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" onclick="total()">Send</button>
+                    </div>
+                </form>
+            </div> <!--close container form-->
+            <div class="col-md-1"></div>
+            <div class="col-md-5 border border-danger">
+                <h2>Frozen Food</h2>
+                <div></div>
+            </div> <!--close list-->
+        </div> <!--close container-->
+    </div> <!--close container-->
 </body>
 </html>
