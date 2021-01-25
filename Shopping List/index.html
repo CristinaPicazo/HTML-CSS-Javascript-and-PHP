@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
-<body>
+<body ng-controller="shoppingListController">
     <!--Navbar-->
     <header>
         <nav class="navbar fixed-top navbar-dark">
@@ -40,11 +40,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 border border-danger">
-                <form role="form">
+                <form role="form" ng-submit="addNew()">
                     <div class="form-group">
                         <!--Categogy-->
                         <label for="category" name="category" id="category" class="col-md-12">Category</label>
-                            <select class="form-control col-md-10" name="category" id="category">
+                            <select class="form-control col-md-10" name="category" id="category" ng-model="category">
                                 <option value="frozen">Frozen Food</option>
                                 <option value="meat">Meat </option>
                                 <option value="fruit">Fuit</option>
@@ -56,28 +56,30 @@
                     <div class="form-group">
                         <!--product to type-->
                         <label for="product" name="product" id="product">Product</label><br>
-                        <input class="form-control col-10" type="text" name="product" title="product" required><br>
+                        <input class="form-control col-10" type="text" name="product" title="product" ng-model="product" required><br>
                     </div>
 
                     <div class="form-group">
                     <!--amount-->
-                    <label for="quantity" name="quantity" id="quantity">Quantity</label><br>
-                        <input class="form-control col-10" type="number" name="quantity" title="quantity" placeholder="1"><br>
+                    <label for="quantity" name="quantity" id="quantity" >Quantity</label><br>
+                        <input class="form-control col-10" type="number" name="quantity" title="quantity" ng-model="quantity" placeholder="1"><br>
                     </div>
                     <hr>
 
                     <div class="form-group">
-                    <button type="button" class="btn btn-success" onclick="add()">Add</button>
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block" onclick="total()">Send</button>
+                        <button type="submit" class="btn btn-primary btn-block" onclick="total()" ng-click="addNew()">Send</button>
                     </div>
                 </form>
             </div> <!--close container form-->
             <div class="col-md-1"></div>
             <div class="col-md-5 border border-danger">
                 <h2>Frozen Food</h2>
+                <ul>
+                    <li ng-repeat="newItem in newItems">
+                        <span clas="fa fa-close" ng-click="deleteItem($index)"></span>
+                        <span>{{newItem.product}} " " {{newItem.quantity}}</span>
+                    </li>
+                </ul>
                 <div></div>
             </div> <!--close list-->
         </div> <!--close container-->
