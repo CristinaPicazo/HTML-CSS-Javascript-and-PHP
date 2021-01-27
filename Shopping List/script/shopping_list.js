@@ -1,14 +1,17 @@
 angular.module('shopping', [])
     .controller('shoppingListController', ['$scope', function($scope){
-        $scope.newItems = ['category',];
+        $scope.newItems = [{product:'chips',quantity:1}];
 
         $scope.addNew = function(){
-            $scope.newItems.push({'category': $scope.category, 
-                                'product': $scope.product,
-                                 'quantity': $scope.quantity})
-            $scope.category = ''
+            if($scope.quantity > 0){
+                $scope.newItems.push({'product': $scope.product,
+                                    'quantity': $scope.quantity})
+            }else{
+                $scope.newItems.push({'product': $scope.product,
+                                    'quantity': 1})
+            }
             $scope.product = ''
-            $scope.quantity = ''
+            $scope.quantity = 1
         }
         $scope.deleteItem = function(index){
             $scope.newItems.splice(index,1);
