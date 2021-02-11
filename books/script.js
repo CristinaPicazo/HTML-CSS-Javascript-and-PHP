@@ -26,5 +26,9 @@ jQuery(document).ready(function($){
     $("#languageList2020").fadeToggle(1000);
   });
   
+  $("#books2019").click(function(){
+    $("#languageList2019").fadeToggle(1000);
+  });
+  
 });
 
