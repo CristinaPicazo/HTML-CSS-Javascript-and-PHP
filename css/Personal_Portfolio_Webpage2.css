@@ -19,6 +19,7 @@ h5, p{
 
 .card img{
     margin-top: 2%;
+    object-fit: cover;
 }
 
 
@@ -38,7 +39,7 @@ h2{
   top: 0;
   left: 0;
   bottom: 0;
-  height: 500px;
+
 }
 
 #carouselButton {
@@ -86,6 +87,8 @@ h2{
       padding: 3rem;
       width:800px;
       height:700px;
+      
+
   }
   .rounded-nav .nav-link {
     border-radius: 50rem !important;

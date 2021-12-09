@@ -1,0 +1,29 @@
+{
+  "name": "cristina-portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio Cristina Picazo Merlos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristinaPicazo/HTML-CSS-Javascript-and-PHP.git"
+  },
+  "keywords": [
+    "portafolio",
+    "cristina",
+    "picazo",
+    "merlos"
+  ],
+  "author": "Cristina Picazo Merlos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristinaPicazo/HTML-CSS-Javascript-and-PHP/issues"
+  },
+  "homepage": "https://github.com/CristinaPicazo/HTML-CSS-Javascript-and-PHP#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
