@@ -7,10 +7,6 @@ h5, p {
   color: black;
 }
 
-.navbar {
-  background-color: #001d31;
-}
-
 .presentation {
   width: 80%;
   background: linear-gradient(to right, #d7d2cc, #304352);
@@ -19,6 +15,7 @@ h5, p {
 
 .card img {
   margin-top: 2%;
+  object-fit: cover;
 }
 
 h2 {
@@ -36,8 +33,6 @@ h2 {
   top: 0;
   left: 0;
   bottom: 0;
-  height: 500px;
-  object-fit: cover;
 }
 
 #carouselButton {
@@ -72,10 +67,6 @@ h2 {
   letter-spacing: 0.1em;
 }
 
-.microsoft-icon {
-  width: 10rem;
-}
-
 @media (min-width: 680px) {
   .rounded-nav {
     border-radius: 50rem !important;
@@ -100,6 +91,49 @@ h2 {
   .presentation {
     width: 40%;
     margin: 10%;
+  }
+}
+.navbar {
+  background-color: #001d31;
+  transition: ease-in-out 1s;
+  animation: nav 1s;
+}
+.navbar .navbar-brand:hover {
+  transform: scale(1.2);
+}
+.navbar .navbar-nav .nav-item {
+  animation: nav-menu 1s;
+}
+.navbar .navbar-nav .nav-item:nth-child(1) {
+  animation-delay: 200ms;
+}
+.navbar .navbar-nav .nav-item:nth-child(2) {
+  animation-delay: 400ms;
+}
+.navbar .navbar-nav .nav-item:nth-child(3) {
+  animation-delay: 600ms;
+}
+.navbar .navbar-nav .nav-item:nth-child(4) {
+  animation-delay: 800ms;
+}
+
+@keyframes nav {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes nav-menu {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

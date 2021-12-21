@@ -1,0 +1,22 @@
+.navbar{
+    background-color: #001d31;
+    transition: ease-in-out 1s;
+    animation: nav 1s;
+    .navbar-brand{
+        
+        &:hover{
+            transform: scale(1.2);
+        }
+        
+    }
+    .navbar-nav{
+        .nav-item{
+            @for $i from 1 through 4{
+                &:nth-child(#{$i}){
+                    animation-delay: 200ms * $i;
+                }
+            }
+            animation: nav-menu 1s;
+        }
+    }
+}
