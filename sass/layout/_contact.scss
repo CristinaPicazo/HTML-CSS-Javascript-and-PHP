@@ -1,0 +1,30 @@
+.contact{
+    display: flex;
+    h2{
+        &:hover{
+            animation: shake 2s 3;
+        }
+    }
+    .box > a{
+        margin: 0.5rem;
+        border-radius: 20px;
+        width: 15rem;
+        text-align: center;
+        animation: squeeze 1s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    
+    .map{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        text-align: center;
+        &:hover{
+            transform: scale(1.2);
+
+        }
+    }
+    
+}
