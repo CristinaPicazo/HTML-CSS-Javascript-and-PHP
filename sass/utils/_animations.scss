@@ -56,3 +56,18 @@
 
     }
 }
+
+@keyframes color-button{
+    0%{
+        background-color: rgba(9,9,121,1);
+    }   
+    
+    50%{
+        background-color: rgba(0,212,255,1);
+    }
+
+    100%{
+        background-color: rgba(9,9,121,1);
+    }
+
+}

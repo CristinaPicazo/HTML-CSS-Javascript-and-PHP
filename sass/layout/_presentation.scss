@@ -1,0 +1,12 @@
+.presentation{
+    margin-top: 6rem auto;
+    max-width: 20rem;
+    background: linear-gradient(to right, #d7d2cc, #304352);
+    .btn{
+        animation: color-button 10s infinite linear;
+        &:hover{
+            transform: scale(1.2);
+
+        }
+    }
+}

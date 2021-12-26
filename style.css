@@ -7,22 +7,6 @@ h5, p {
   color: black;
 }
 
-.presentation {
-  width: 80%;
-  background: linear-gradient(to right, #d7d2cc, #304352);
-  margin: 20%;
-}
-
-.card img {
-  margin-top: 2%;
-  object-fit: cover;
-}
-
-h2 {
-  text-align: center;
-  padding-top: 5%;
-}
-
 /* Carousel */
 .carousel .carousel-item {
   height: 500px;
@@ -120,6 +104,18 @@ h2 {
   animation-delay: 800ms;
 }
 
+.presentation {
+  margin-top: 6rem auto;
+  max-width: 20rem;
+  background: linear-gradient(to right, #d7d2cc, #304352);
+}
+.presentation .btn {
+  animation: color-button 10s infinite linear;
+}
+.presentation .btn:hover {
+  transform: scale(1.2);
+}
+
 .contact {
   display: flex;
 }
@@ -190,6 +186,17 @@ h2 {
   100% {
     transform: translateX(0rem);
     transform: rotate(360deg);
+  }
+}
+@keyframes color-button {
+  0% {
+    background-color: #090979;
+  }
+  50% {
+    background-color: #00d4ff;
+  }
+  100% {
+    background-color: #090979;
   }
 }
 
