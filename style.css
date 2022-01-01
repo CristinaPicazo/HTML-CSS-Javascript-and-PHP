@@ -88,6 +88,12 @@ h5, p {
 .navbar .navbar-brand:hover {
   transform: scale(1.2);
 }
+.navbar .navbar-toggler {
+  background-color: white;
+}
+.navbar .navbar-toggler:hover {
+  transform: scale(1.2);
+}
 .navbar .navbar-nav .nav-item {
   animation: nav-menu 1s;
 }
@@ -105,7 +111,7 @@ h5, p {
 }
 
 .presentation {
-  margin-top: 6rem auto;
+  margin: 6rem auto;
   max-width: 20rem;
   background: linear-gradient(to right, #d7d2cc, #304352);
 }
@@ -116,6 +122,11 @@ h5, p {
   transform: scale(1.2);
 }
 
+@media only screen and (max-width: 800px) {
+  .presentation {
+    margin: 10rem auto;
+  }
+}
 .contact {
   display: flex;
 }

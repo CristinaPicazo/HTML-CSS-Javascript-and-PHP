@@ -1,5 +1,5 @@
 .presentation{
-    margin-top: 6rem auto;
+    margin: 6rem auto;
     max-width: 20rem;
     background: linear-gradient(to right, #d7d2cc, #304352);
     .btn{
@@ -8,5 +8,11 @@
             transform: scale(1.2);
 
         }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .presentation{
+        margin: 10rem auto;
     }
 }
