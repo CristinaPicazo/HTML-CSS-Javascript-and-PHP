@@ -77,6 +77,10 @@ h5, p {
     margin: 10%;
   }
 }
+header {
+  margin-bottom: 2rem;
+}
+
 .navbar {
   background-color: #001d31;
   transition: ease-in-out 1s;
@@ -84,12 +88,14 @@ h5, p {
 }
 .navbar .navbar-brand {
   animation: shake 2s infinite;
+  margin: 1rem auto !important;
 }
 .navbar .navbar-brand:hover {
   transform: scale(1.2);
 }
 .navbar .navbar-toggler {
   background-color: white;
+  visibility: visible;
 }
 .navbar .navbar-toggler:hover {
   transform: scale(1.2);
@@ -109,7 +115,25 @@ h5, p {
 .navbar .navbar-nav .nav-item:nth-child(4) {
   animation-delay: 800ms;
 }
+.navbar .navbar-nav .nav-item .nav-link {
+  text-align: center;
+}
+.navbar .navbar-nav .nav-item i {
+  font-size: larger;
+}
+.navbar .navbar-nav .nav-item p {
+  margin: 1rem auto !important;
+  color: white;
+}
+.navbar .navbar-nav .nav-item:hover {
+  transform: scale(1.2);
+}
 
+@media only screen and (max-width: 800px) {
+  .presentation {
+    margin: 10rem auto;
+  }
+}
 .presentation {
   margin: 6rem auto;
   max-width: 20rem;
@@ -122,11 +146,6 @@ h5, p {
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 800px) {
-  .presentation {
-    margin: 10rem auto;
-  }
-}
 .contact {
   display: flex;
 }

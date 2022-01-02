@@ -1,21 +1,28 @@
+header{
+    margin-bottom: 2rem;
+}
 .navbar{
     background-color: #001d31;
     transition: ease-in-out 1s;
     animation: nav 1s;
     .navbar-brand{
         animation: shake 2s infinite;
-
+        margin: 1rem auto !important;
         &:hover{
             transform: scale(1.2);
         }
     }
+    
     .navbar-toggler{
         background-color: white;
+        visibility: visible;
         &:hover{
             transform: scale(1.2);
         }
         
     }
+    
+    
     .navbar-nav{
         .nav-item{
             @for $i from 1 through 4{
@@ -24,6 +31,19 @@
                 }
             }
             animation: nav-menu 1s;
+            .nav-link{
+                text-align: center;
+            }
+            i{
+                font-size: larger;
+            }
+            p{
+                margin: 1rem auto !important;
+                color: white;
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
         }
     }
 }

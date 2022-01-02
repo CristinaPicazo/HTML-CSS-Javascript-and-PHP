@@ -1,3 +1,8 @@
+@media only screen and (max-width: 800px) {
+    .presentation{
+        margin: 10rem auto;
+    }
+}
 .presentation{
     margin: 6rem auto;
     max-width: 20rem;
@@ -8,11 +13,5 @@
             transform: scale(1.2);
 
         }
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .presentation{
-        margin: 10rem auto;
     }
 }
