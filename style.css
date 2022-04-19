@@ -1,10 +1,7 @@
 body {
-  background: linear-gradient(to right, #304352, #d7d2cc);
-  min-height: 100vh;
-}
-
-h5, p {
-  color: black;
+  background: linear-gradient(#81c9ff, rgb(0, 45, 79));
+  background-attachment: fixed;
+  color: white;
 }
 
 /* Carousel */
@@ -78,27 +75,28 @@ h5, p {
   }
 }
 header {
-  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .navbar {
-  background-color: #001d31;
+  background-color: #003157;
   transition: ease-in-out 1s;
   animation: nav 1s;
 }
+.navbar a:hover {
+  color: white;
+  transform: scale(1.2);
+}
 .navbar .navbar-brand {
-  animation: shake 2s infinite;
+  animation: shake 3s infinite;
   margin: 1rem auto !important;
 }
-.navbar .navbar-brand:hover {
-  transform: scale(1.2);
+.navbar .navbar-nav {
+  display: -webkit-inline-box;
 }
-.navbar .navbar-toggler {
-  background-color: white;
-  visibility: visible;
-}
-.navbar .navbar-toggler:hover {
-  transform: scale(1.2);
+.navbar .navbar-nav .nav-item {
+  display: inline-flex;
+  padding: 1rem;
 }
 .navbar .navbar-nav .nav-item {
   animation: nav-menu 1s;
@@ -123,17 +121,8 @@ header {
 }
 .navbar .navbar-nav .nav-item p {
   margin: 1rem auto !important;
-  color: white;
-}
-.navbar .navbar-nav .nav-item:hover {
-  transform: scale(1.2);
 }
 
-@media only screen and (max-width: 800px) {
-  .presentation {
-    margin: 10rem auto;
-  }
-}
 .presentation {
   margin: 6rem auto;
   max-width: 20rem;
@@ -146,32 +135,30 @@ header {
   transform: scale(1.2);
 }
 
-.contact {
-  display: flex;
+@keyframes drop {
+  0% {
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+    box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+  }
 }
-.contact h2:hover {
-  animation: shake 2s 3;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.contact .box > a {
-  margin: 0.5rem;
-  border-radius: 20px;
-  width: 15rem;
-  text-align: center;
-  animation: squeeze 1s;
-}
-.contact .box > a:hover {
-  transform: scale(1.2);
-}
-.contact .map {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  text-align: center;
-}
-.contact .map:hover {
-  transform: scale(1.2);
-}
-
 @keyframes nav {
   0% {
     opacity: 0;
@@ -220,14 +207,67 @@ header {
 }
 @keyframes color-button {
   0% {
-    background-color: #090979;
+    background-color: rgb(9, 9, 121);
   }
   50% {
-    background-color: #00d4ff;
+    background-color: rgb(0, 212, 255);
   }
   100% {
-    background-color: #090979;
+    background-color: rgb(9, 9, 121);
   }
+}
+@keyframes card-rotation {}
+.card-deck {
+  margin: 0 2rem;
+}
+.card-deck .card {
+  margin: 2rem;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  animation: drop 10s infinite;
+  overflow: hidden;
+  background-color: #003157;
+}
+.card-deck .card:hover {
+  animation-play-state: paused;
+}
+.card-deck .card img {
+  height: 10rem;
+  object-fit: cover;
+}
+.card-deck .card .card-body {
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+.card-deck .card .card-body :hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.contact {
+  display: flex;
+}
+.contact h2:hover {
+  animation: shake 2s 3;
+}
+.contact .box > a {
+  margin: 0.5rem;
+  border-radius: 20px;
+  width: 15rem;
+  text-align: center;
+  animation: squeeze 1s;
+}
+.contact .box > a:hover {
+  transform: scale(1.2);
+}
+.contact .map {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  text-align: center;
+}
+.contact .map:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
