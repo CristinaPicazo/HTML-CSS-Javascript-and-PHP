@@ -126,7 +126,7 @@ header {
 .presentation {
   margin: 6rem auto;
   max-width: 20rem;
-  background: linear-gradient(to right, #d7d2cc, #304352);
+  background: linear-gradient(#81c9ff, rgb(0, 45, 79));
 }
 .presentation .btn {
   animation: color-button 10s infinite linear;
@@ -250,15 +250,23 @@ header {
 .contact h2:hover {
   animation: shake 2s 3;
 }
-.contact .box > a {
-  margin: 0.5rem;
-  border-radius: 20px;
-  width: 15rem;
-  text-align: center;
-  animation: squeeze 1s;
+.contact .list-group {
+  margin: auto;
 }
-.contact .box > a:hover {
-  transform: scale(1.2);
+.contact .list-group a,
+.contact .list-group .map {
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  animation: drop 10s infinite;
+  overflow: hidden;
+  margin: 1rem auto;
+  text-align: center;
+  text-decoration: none;
+}
+.contact .list-group a:hover,
+.contact .list-group .map:hover {
+  transform: scale(1.1);
+  animation-play-state: paused;
 }
 .contact .map {
   display: flex;
