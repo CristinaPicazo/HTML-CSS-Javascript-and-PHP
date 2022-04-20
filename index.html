@@ -39,18 +39,6 @@
           href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a">Cristina Picazo
           Merlos</a></h1>
 
-
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          id="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-
-
-
-
-
-
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link text-white" href="#home">
@@ -81,8 +69,33 @@
           </a>
         </li>
       </ul><!-- #nav-list -->
-      <!--</div> .collapse .navbar-collapse -->
-    </nav>
+
+
+      <nav class="navbar navbar-expand-m navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <div class="pos-f-t ">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
   </header>
 
   <!--Presentation  mb-3 mx-auto p-2 d-flex justify-content-center -->
@@ -91,7 +104,7 @@
     <div class="card presentation text-center shadow-lg rounded .col-6 .col-lg-6 mx-auto" data-aos="flip-right">
       <img class="card-img-top shadow-lg rounded" src="https://i.ibb.co/r4hxQky/WIN-20201018-17-46-50-Pro-3.jpg"
         alt="avatar">
-      <div class="card-body">
+      <div class="card-body text-white">
         <h5 class="card-title">My name is Cristina</h5>
         <p class="card-text">In order to practice what I have learned I have created this website showing some of my
           projects with the hope to start working as a programmer in the near future.</p>
@@ -107,7 +120,7 @@
   <section id="projects">
     <h2 class="text-center text-white display-4" data-aos="fade-down">Projects</h2>
 
-    <div class="card-deck">
+    <div class="card-deck" data-aos="fade-up">
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card d-flex flex-column">
           <img class="card-img-top" src="./images/ohmyfood.png" alt="ohmyfood">
@@ -316,20 +329,23 @@
             I enjoyed the podcast so much was because I shared their aspiration of becoming a software developer. So I
             started planning
             how to achieve my goal. So as I have started a web developer bootcamp with Openclassrooms.</p>
-          <p><a class="btn btn-primary d-none d-sm-inline-block" id="collapseToRead" data-toggle="collapse"
-              href="#collapseToRead" role="button" aria-expanded="false">Read More</a></p>
-          <div class="collapse">
+          <button onclick="showMore()" class="btn btn-primary d-none d-sm-inline-block" id="collapseToRead"
+            role="button" aria-expanded="false">Read More</button>
+          <div class="collapse" id="moreAboutMe">
             <p class="lead mb-0 text-justify d-none d-sm-inline-block">As a Spanish person living abroad (in Northern
               Ireland), having the right certificates was a barrier to enrolling any higher
-              certificate course. I got my A levels and Higher National Certificate in Financial Business in Spain, and
+              certificate course. I got my A levels and Higher National Certificate in Financial Business in Spain,
+              and
               those certificates
-              are not transferrable to UK education scheme, so I couldn't use them to enroll the courses I needed in UK.
+              are not transferrable to UK education scheme, so I couldn't use them to enroll the courses I needed in
+              UK.
               Therefore, I
               decided to take an online Higher National Certificate in computer's software in Spain, specifically for
               Development of
               Multi-Platform Applications.</p>
 
-            <p class="lead mb-0 text-justify d-none d-sm-inline-block">I decided to follow the typical path and take all
+            <p class="lead mb-0 text-justify d-none d-sm-inline-block">I decided to follow the typical path and take
+              all
               the subjects of the first year. Then I realized the workload was too high
               to balance it with work. The online training did not work well for anyone. The majority of students
               couldn't
@@ -707,19 +723,17 @@
         <!--col-lg-7-->
       </div>
       <!--row-->
-      <div class="row list-group align-items-center box" data-aos="fade-up-right">
-        <a class="list-group-item text-center col-6 col-md-4"
-          href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a" target="_blank"><i
-            class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp; Linkedin</a>
-        <a class="list-group-item text-center col-6 col-md-4" href="https://github.com/CristinaPicazo"
-          target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp; GitHub</a>
+      <div class="row list-group" data-aos="fade-up-right">
+        <a class="list-group-item col-4 col-md-2" href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a"
+          target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp; Linkedin</a>
+        <a class="list-group-item col-4 col-md-2" href="https://github.com/CristinaPicazo" target="_blank"><i
+            class="fa fa-github" aria-hidden="true"></i>&nbsp; GitHub</a>
 
         <!--Google map-->
-        <div class="map">
-          <iframe data-aos="fade-up-left" id="gmap_canvas"
+        <div class="map" data-aos="fade-up-left">
+          <iframe id="gmap_canvas"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9863.115040689197!2d-0.4927316074136118!3d38.344382795849796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1650389882509!5m2!1ses!2ses"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!--map-->
       </div>
