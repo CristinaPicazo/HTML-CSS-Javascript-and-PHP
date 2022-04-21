@@ -278,4 +278,12 @@ header {
   transform: scale(1.2);
 }
 
+#coursesResumeContent img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.2rem;
+  object-fit: contain;
+  overflow: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
