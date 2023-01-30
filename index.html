@@ -1,833 +1,1553 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Language and name -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Personal Portafolio Cristina"
+      content="Portfolio with different Web Pages using on html and css"
+    />
+    <title>Personal Portafolio Cristina</title>
 
-<head>
-  <!-- Language and name -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="Personal Portafolio Cristina" content="Portfolio with different Web Pages using on html and css" />
-  <title>Personal Portafolio Cristina</title>
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      type="text/javascript"
+    ></script>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/Personal_Portfolio_Webpage2.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-  <script src="https://platform.linkedin.com/badges/js/profile.js" type="text/javascript"></script>
-  <!-- CSS -->
-  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/Personal_Portfolio_Webpage2.css" /> -->
-  <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css' />
+    <!-- CDN sources -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- CDN sources -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Icon -->
+    <link rel="icon" href="images/cpm.png" type="image/x-icon" />
 
-  <!-- Icon -->
-  <link rel="icon" href="images/cpm.png" type="image/x-icon" />
+    <!--Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="script/script.js"></script>
 
-  <!--Angular -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-  <script src="script/script.js"></script>
+    <!-- Boostrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
 
-  <!-- Boostrap Link -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <body>
+    <!--Nav bar-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg d-flex">
+        <h1>
+          <a
+            class="navbar-brand text-white p-2 text-truncate"
+            href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a"
+            >Cristina Picazo Merlos</a
+          >
+        </h1>
 
-
-</head>
-
-<body>
-
-
-  <!--Nav bar-->
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg d-flex">
-      <h1><a class="navbar-brand text-white p-2 text-truncate"
-          href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a">Cristina Picazo
-          Merlos</a></h1>
-
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link text-white" href="#home">
-            <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
-            <i class="d-xl-none d-lg-none fa fa-home"></i>
-            <p class="d-none d-lg-block">Home</p><span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#projects">
-            <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
-            <i class="d-xl-none d-lg-none fa fa-files-o"></i>
-            <p class="d-none d-lg-block">Projects</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#about">
-            <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
-            <i class="d-xl-none d-lg-none fa fa-user"></i>
-            <p class="d-none d-lg-block">About</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#contact">
-            <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
-            <i class="d-xl-none d-lg-none fa fa-envelope"></i>
-            <p class="d-none d-lg-block">Contact</p>
-          </a>
-        </li>
-      </ul><!-- #nav-list -->
-
-
-      <nav class="navbar navbar-expand-m navbar-dark">
-        <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-      <div class="pos-f-t ">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#projects">Rojects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-  </header>
-
-  <!--Presentation  mb-3 mx-auto p-2 d-flex justify-content-center -->
-
-  <section id="home">
-    <div class="card presentation text-center shadow-lg rounded .col-6 .col-lg-6 mx-auto" data-aos="flip-right">
-      <img class="card-img-top shadow-lg rounded" src="https://i.ibb.co/r4hxQky/WIN-20201018-17-46-50-Pro-3.jpg"
-        alt="avatar">
-      <div class="card-body text-white">
-        <h5 class="card-title">My name is Cristina</h5>
-        <p class="card-text">In order to practice what I have learned I have created this website to show some of my projects, including the 7 projects done in the bootcamp I have just finished.</p>
-        <div class="col-12  col-sm align-self-center">
-          <a role="button" class="btn btn-block nav-link btn-primary" data-toggle="tooltip" data-html="true"
-            title="Check my Courses and training" data-placement="bottom" href="#about">About me</a>
-        </div><!-- col-12 -->
-      </div><!-- card-body -->
-    </div>
-    <!--presentation -->
-  </section>
-
-  <section id="projects">
-    <h2 class="text-center text-white display-4" data-aos="fade-down">Projects</h2>
-    
-    <!-- OpenClassRooms Projects -->
-    <div class="card col-md-6 col-12 m-auto rounded card-deck" data-aos="fade-up">
-      <h5 class="card-title m-auto col-4">Bootcamp Projects</h5>
-      <ol class="list-group list-group-flush m-auto col-8">
-        <li class="list-group-item"><a class="text-dark" href="https://github.com/CristinaPicazo/ReserviaRessources" target="_blank">P2 - Reservia Resources</a></li>
-        <li class="list-group-item"><a class="text-dark" href="https://github.com/CristinaPicazo/ohmyfood" target="_blank">P3 - ohmyfood</a></li>
-        <li class="list-group-item"><a class="text-dark" href="https://github.com/CristinaPicazo/GoMikeDesigns" target="_blank">P4 - GoMike Designs</a></li>
-        <li class="list-group-item"><a class="text-dark" href="https://github.com/CristinaPicazo/Kanap" target="_blank">P5 - Kanap</a></li>
-        <li class="list-group-item"><a class="text-dark" href="https://github.com/CristinaPicazo/piiquante" target="_blank">P6 - Piiquante</a></li>
-        <li class="list-group-item"><a class="text-dark" href="https://github.com/CristinaPicazo/CONNECT-E" target="_blank">P7 - Connect-e</a></li>
-
-      </ol>
-    </div>
-
-    <div class="card-deck" data-aos="fade-up">
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="./images/ohmyfood.png" alt="ohmyfood">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazo.github.io/ohmyfood/" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Ohmyfood</h5>
-            </a>
-            <p class="card-text d-none">Proyect 4. Web Developer Course in OpenClassRooms. Html, css & sass.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://github.com/CristinaPicazo/CONNECT-E/blob/master/front/assets/icon-above-font.png" alt="Connecte">
-          <div class="card-body text-white">
-            <a href="https://github.com/CristinaPicazo/CONNECT-E" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Connect-e</h5>
-            </a>
-            <p class="card-text d-none">Proyect 7. Web Developer Course in OpenClassRooms. Full-stack project.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-      
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="./images/Reservia.png" alt="Reservia Ressources">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazo.github.io/ReserviaRessources/" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Reservia Ressources</h5>
-            </a>
-            <p class="card-text d-none">Proyect 2. Web Developer Course in OpenClassRooms. Html and css.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="Draw_Diary/img/MoonTrees.png" alt="Books">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/books/index.html" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Books</h5>
-            </a>
-            <p class="card-text d-none">Collection of books that I have been reading these years.
-              Html, Css, Bootstrap and jQuery. I am still working on it and from time to
-              time I make some changes.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="Draw_Diary/img/faro.png" alt="Draw Diary">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/Draw_Diary/index.html" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Draw Diary</h5>
-            </a>
-            <p class="card-text d-none">Webpage created to show some basic paintings made by myself,
-              most of them are based in some youtube videos and using PowerPoint.
-              The website has been created using Bootstrap and AngularJs. I am still working on it and from time
-              to time I make some changes.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/Sc8sz0Y/Shopping-List.png" alt="Shopping List AngularJS">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/Shopping%20List/index.html" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Shopping List AngularJS</h5>
-            </a>
-            <p class="card-text d-none">Shopping list created in AngularJS and Bootstrap to practise
-              part of the course "Single Page Web Applications with AngularJS".</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/qmMRhMd/ToDo.png" alt="ToDo List">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/ToDo/index.html" target="_blank" class="text-white">
-              <h5 class="card-title text-center">ToDo List</h5>
-            </a>
-            <p class="card-text d-none">I created this website to practise some Javascript but I am
-              still working on it. It has been created in pure HTML, CSS and JavaScript, without any framework.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/N6ks4kk/Greenfoot.png" alt="GreenFoot Game">
-          <div class="card-body text-white">
-            <a href="https://www.greenfoot.org/scenarios/25818" target="_blank" class="text-white">
-              <h5 class="card-title text-center">GreenFoot Game</h5>
-            </a>
-            <p class="card-text d-none">This is a game created in Java to practise for the EDX Java
-              course. It is a bit ugly but completely functional.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/xh8x4ck/assignment1-Angular-JS.png"
-            alt="Coursera AngularJS Assignment 1">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazo.github.io/courseraAngular/assignment1/index.html" target="_blank"
-              class="text-white">
-              <h5 class="card-title text-center">Coursera AngularJS Assignment 1</h5>
-            </a>
-            <p class="card-text d-none">First assignment in AngularJS the course "Single Page Web
-              Applications with AngularJS".</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/MRV0L8N/coursera.png" alt="Coursera Bootstrap">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/coursera/index.html" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Coursera Bootstrap</h5>
-            </a>
-            <p class="card-text d-none">Project based in Bootstrap made for a coursera's project
-              course for a the course "Front-End Web UI Frameworks and Tools: Bootstrap 4".</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/3fhkq90/Coursera-Restaurant.png" alt="Restaurant">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/mod5_solution/index.html" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Restaurant</h5>
-            </a>
-            <p class="card-text d-none">Project made for a coursera's project course.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/7NpDS2R/Personal-Portfolio-Webpage.png"
-            alt="Personal Portfolio Webpage">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/Personal%20Portfolio%20Webpage/index.html" target="_blank"
-              class="text-white">
-              <h5 class="card-title text-center">Personal Portfolio Webpage</h5>
-            </a>
-            <p class="card-text d-none">Webpage created in basic html and css for a
-              freecodecamp's project</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/XycJ1km/Technical-Documentation-Page.png"
-            alt="Technical Documentation Page">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/Technical%20Documentation%20Page/index.html" target="_blank"
-              class="text-white">
-              <h5 class="card-title text-center">Technical Documentation Page</h5>
-            </a>
-            <p class="card-text d-none">Webpage created in basic html and css for a
-              freecodecamp's project.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card d-flex flex-column">
-          <img class="card-img-top" src="https://i.ibb.co/PY8cT1c/Tribute-Page.png" alt="Tribute Page">
-          <div class="card-body text-white">
-            <a href="https://cristinapicazomerlos.com/Tribute%20Page/index.html" target="_blank" class="text-white">
-              <h5 class="card-title text-center">Tribute Page</h5>
-            </a>
-            <p class="card-text d-none">Webpage created in basic html and css for a
-              freecodecamp's project.</p>
-          </div><!-- card-body -->
-        </div><!-- card -->
-      </div><!-- col-lg-4 col-md-6 col-sm-12 -->
-
-    </div><!-- card-deck -->
-  </section> <!-- projects -->
-
-  <!-- Courses -->
-  <!-- Bordered tabs-->
-  <section id="about">
-    <div class="container py-5">
-      <div class="row mb-5">
-        <div class="col-lg-8 text-white py-4 text-center mx-auto">
-          <h2 class="text-center text-white display-4" data-aos="fade-down">Courses and training</h2>
-          <p class="lead mb-0 text-justify d-none d-sm-inline-block">I have always liked computers but it was only a few
-            years ago that I decided to study what I really enjoy. One day I
-            discovered a podcast about a bootcamp where lorry drivers were doing an online course. Every week the
-            teacher made a
-            podcast interviewing his students to check their progress and feelings. In that moment it dawn on me that
-            the reason
-            I enjoyed the podcast so much was because I shared their aspiration of becoming a software developer. So I
-            started planning
-            how to achieve my goal. So as I have started a web developer bootcamp with Openclassrooms.</p>
-          <button onclick="showMore()" class="btn btn-primary d-none d-sm-inline-block" id="collapseToRead"
-            role="button" aria-expanded="false">Read More</button>
-          <div class="collapse" id="moreAboutMe">
-            <p class="lead mb-0 text-justify d-none d-sm-inline-block">As a Spanish person living abroad (in Northern
-              Ireland), having the right certificates was a barrier to enrolling any higher
-              certificate course. I got my A levels and Higher National Certificate in Financial Business in Spain,
-              and
-              those certificates
-              are not transferrable to UK education scheme, so I couldn't use them to enroll the courses I needed in
-              UK.
-              Therefore, I
-              decided to take an online Higher National Certificate in computer's software in Spain, specifically for
-              Development of
-              Multi-Platform Applications.</p>
-
-            <p class="lead mb-0 text-justify d-none d-sm-inline-block">I decided to follow the typical path and take
-              all
-              the subjects of the first year. Then I realized the workload was too high
-              to balance it with work. The online training did not work well for anyone. The majority of students
-              couldn't
-              manage to follow
-              the pace of the course, and some teachers lacked the training required to impart the subjects online.
-              After
-              finishing my
-              first year I managed to pass 2 subjects, which did not fulfil my expectations. I also realized that it
-              would
-              very hard to
-              manage travelling to Spain to take the exams, so I decided not to continue with this course and take a
-              different approach.
-              I started some online courses to get the basics of multiplatform programming and decided to retake the
-              higher certificate
-              in Development of Multi-Platform Applications in the future.</p>
+        <nav class="navbar navbar-dark">
+          <button
+            class="navbar-toggler p-2"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#projects">Rojects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="p-5 bg-white rounded shadow mb-5" data-aos="fade-up-right">
-        <ul id="coursesResume" role="tablist"
-          class="nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center">
-          <li class="nav-item flex-sm-fill">
-            <a id="courses-tab" data-toggle="tab" href="#courses" role="tab" aria-controls="courses"
-              aria-selected="true"
-              class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border active">Courses</a>
+
+        <!-- Large menu -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#home">
+              <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
+              <i class="d-xl-none d-lg-none fa fa-home"></i>
+              <p class="d-none d-lg-block">Home</p>
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
-          <li class="nav-item flex-sm-fill">
-            <a id="resources-tab" data-toggle="tab" href="#resources" role="tab" aria-controls="resources"
-              aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border">Other
-              resources</a>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#projects">
+              <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
+              <i class="d-xl-none d-lg-none fa fa-files-o"></i>
+              <p class="d-none d-lg-block">Projects</p>
+            </a>
           </li>
-          <li class="nav-item flex-sm-fill">
-            <a id="webinars-tab" data-toggle="tab" href="#webinars" role="tab" aria-controls="webinars"
-              aria-selected="false"
-              class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border">Webinars</a>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">
+              <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
+              <i class="d-xl-none d-lg-none fa fa-user"></i>
+              <p class="d-none d-lg-block">About</p>
+            </a>
           </li>
-          <li class="nav-item flex-sm-fill">
-            <a id="podcast-tab" data-toggle="tab" href="#podcast" role="tab" aria-controls="podcast"
-              aria-selected="false"
-              class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border">Podcast</a>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">
+              <!-- <span class="glyphicon glyphicon-info-sign"></span> -->
+              <i class="d-xl-none d-lg-none fa fa-envelope"></i>
+              <p class="d-none d-lg-block">Contact</p>
+            </a>
           </li>
         </ul>
-        <div id="coursesResumeContent" class="tab-content">
-          <div id="courses" role="tabpanel" aria-labelledby="courses-tab" class="tab-pane fade px-4 py-5 show active">
-            <p class="leade font-italic">Given that the HNCs covered HTML, CSS, PHP, SQL, C# and Java, I started with
-              some certificated courses to complement those areas among other languages, frameworks and hibraries, such
-              as:</p>
-            <a href="https://www.youracclaim.com/badges/7ec67262-f60e-47d0-9a17-461b4cad8708/public_url"
-              target="_blank">
-              <img class="w-25 p-0"
-                src="https://images.youracclaim.com/size/340x340/images/6a254dad-77e5-4e71-8049-94e5c7a15981/azure-fundamentals-600x600.png"
-                alt="Microsoft Certified: Azure Fundamentals" width="140" height="140"></a>
+        <!-- #nav-list -->
+      </nav>
+    </header>
 
-            <a href="https://www.youracclaim.com/badges/c6e484c5-91e9-4815-ba17-24123259db99" target="_blank">
-              <img class="w-25 p-0"
-                src="https://images.youracclaim.com/size/340x340/images/c2537593-9f53-4901-9207-f51376ce7150/MTA-Software_Development_Fundamentals-600x600.png"
-                alt="Microsoft Certified: Software Development Fundamentals" width="140" height="140"></a>
+    <!--Presentation  mb-3 mx-auto p-2 d-flex justify-content-center -->
 
-            <a href="https://www.youracclaim.com/badges/80fcd9f8-7633-4242-8f8b-818cb26db05a" target="_blank">
-              <img class="w-25 p-0"
-                src="https://images.youracclaim.com/images/bcce29de-388a-421e-aa4e-49d08e5f6b8c/MTA-Database_Fundamentals-600x600.png"
-                alt="Microsoft Certified: Database Fundamentals" width="140" height="140"></a>
-
-            <a href="https://www.credly.com/badges/c76d43c3-3c46-4646-93ea-c775754d65c8" target="_blank">
-              <img class="w-25 p-0"
-                src="https://images.credly.com/size/680x680/images/ff67d2c3-ad8f-4766-b795-fc34a8461c94/dynamics365-fundamentals-600x600.png"
-                alt="Microsoft Certified: Dynamics 365 Fundamentals" width="140" height="140"></a>
-
-            <a href="https://www.credly.com/badges/f5b0ff87-23cc-4ee9-8f57-fc4e716434f3/public_url" target="_blank">
-              <img class="w-25 p-0"
-                src="https://images.credly.com/size/680x680/images/2a6251f2-737b-4bf6-9190-d77570cc76fc/CERT-Fundamentals-Power-Platform.png"
-                alt="Microsoft Certified: Dynamics 365 Fundamentals" width="140" height="140"></a>
-
-            <a href="https://www.credly.com/badges/35bfacec-9d1b-48b1-b9ed-10ae39ba0705" target="_blank">
-              <img class="w-25 p-0"
-                src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png"
-                alt="Microsoft Certified: Azure AI Fundamentals" width="140" height="140"></a>
-            <ul>
-              <li><a href="https://learndigital.withgoogle.com/digitalgarage/course/web-developer" target="_blank">Web Developer Bootcamp (EQF Associate's-level diploma) by OpenClassrooms
-                </a>
-                <ul>
-                  <li>P1 - Learning Plan</li>
-                  <li>P2 - Turn Mock-ups Into a Web Page with HTML & CSS</li>
-                  <li><a href="https://github.com/CristinaPicazo/ohmyfood" target="_blank">P3 - Integrate a mobile website with animations in CSSp</a></li>
-                  <li><a href="https://github.com/CristinaPicazo/GoMikeDesigns" target="_blank">P4 - Optimize a website (SEO, performance and accessibility)</a></li>
-                  <li><a href="https://github.com/CristinaPicazo/Kanap" target="_blank">P5 - Build an e-commerce Website with JavaScript</a></li>
-                  <li><a href="https://github.com/CristinaPicazo/piiquante" target="_blank">P6 - Build a Secure API for a Review App</a></li>
-                  <li><a href="https://github.com/CristinaPicazo/CONNECT-E.git" target="_blank">P7 - Build a Full-Stack Solution (Internal social network)</a></li>
-                </ul>
-              
-              <li><a href="https://www.ausiasmarch.net/en/node/69" target="_blank">Higher
-                  Technician in Web Application Development
-                  (EQF HNCs) / IES Mare Nostrum, Spain
-                </a><button type="button" class="btn btn-info">on-going</button></li>
-              
-              <li><a href="https://iessanvicente.com/alu/af/index.php" target="_blank">Higher
-                  Technician in Administration and Finances
-                  BTEC Level 4 / SQA Higher National Certificate (HNC) (SCQF Level 7)/ IES Mare Nostrum, Spain (2011 -
-                  2014)
-                </a></li><br>          
-              <li>IFCD15 Java SE 11 (ORACLE) by Femxa - Adquiero (2022)</li>
-              <li>Lombard Method Certificate, Inndromeda (2022)</li>
-              <li>IFCD89 JavaScript Avanzado by PUE (2022)</li>
-               <li>OpenClassrooms:</li>      
-              <ul>
-                <li>Build web apps with ReactJS (2022)</li>
-                <li>Create a Web Application With Vue.js (2022)</li>
-                <li>Design the Logical Model of Your Relational Database (2022)</li>
-                <li>Implement a Relational Database with SQL (2022)</li>
-                <li>Go Full-Stack With Node.js, Express, and MongoDB (2022)</li>
-                <li>Secure Your Web Application With OWASP (2022)</li>
-                <li>Test Your Website’s Interface (2022)</li>
-                <li>Write JavaScript for the Web (2022)</li>
-                <li>Code an Accessible Website in HTML & CSS (2022)</li>
-                <li>Ensure Your Website Meets Technical SEO Requirements (2022)</li>
-                <li>Learn Programming With JavaScrip (2022)</li>
-                <li>Make Your Web Content Accessible (2022)</li>
-                <li>Create Modern CSS Animations (2021)</li>
-                <li>Breakdown and integrate a mockup (2021)</li>
-                <li>Create Web Page Layouts With CSS (2021)</li>
-                <li>Produce Maintainable CSS With Sass (2021)</li>
-                <li>Learn How to Learn (2021)</li>
-                <li>Learn the Command Line in Terminal (2021)</li>
-                <li>Manage Your Code Project With Git & Github (2021)</li>
-                <li>Set Up Your Front-End Development Environment (2021)</li>
-                <li>Stay Up to Date With Innovations in Your Field (2021)</li>
-                <li>Understanding the Web (2021)</li>      
-              </ul>
-              
-              <li>Introduction to Power BI by DataCamp (2021)</li>
-                
-              <li>Microsoft Cetificates:</li>      
-              <ul>
-                <li><a class="microsoft-icon"
-                    href="https://www.youracclaim.com/badges/7ec67262-f60e-47d0-9a17-461b4cad8708/public_url"
-                    target="_blank">Microsoft Certified: Azure Fundamentals AZ-900 (2020)</a></li>
-                <li><a class=" microsoft-icon"
-                    href="https://www.youracclaim.com/badges/c6e484c5-91e9-4815-ba17-24123259db99"
-                    target="_blank">Microsoft Certified: Microsoft MTA Software Development Fundamentals 98-361
-                    (2021)</a>
-                </li>
-                <li><a class=" microsoft-icon"
-                    href="https://www.youracclaim.com/badges/c6e484c5-91e9-4815-ba17-24123259db99"
-                    target="_blank">Microsoft Certified: Microsoft MTA Database Fundamentals Certified 98-364
-                    (2021)</a>
-                </li>
-                <li><a class=" microsoft-icon" href="https://www.credly.com/badges/c76d43c3-3c46-4646-93ea-c775754d65c8"
-                    target="_blank">Microsoft
-                    Certified: Dynamics 365 Fundamentals MB-901 (2021)</a>
-                </li>
-                <li><a class=" microsoft-icon"
-                    href="https://www.credly.com/badges/f5b0ff87-23cc-4ee9-8f57-fc4e716434f3/public_url"
-                    target="_blank">Microsoft Certified: Power Platform Fundamentals PL-900 (2021)</a>
-                </li>
-                <li><a class=" microsoft-icon"
-                    href="https://www.credly.com/badges/35bfacec-9d1b-48b1-b9ed-10ae39ba0705/public_url"
-                    target="_blank">Microsoft Certified: Azure AI Fundamentals (2021)</a>
-                </li>
-              </ul>
-
-              <li><a href="https://www.belfastmet.ac.uk" target="_blank">Belfastmet</a></li>
-              <ul>
-                <li><a
-                    href="https://www.belfastmet.ac.uk/course-detail/20-21/p00531-ad/cambridge-english-level-2-certificate-in-esol-international-advanced/"
-                    target="_blank">Cambridge English Level 2 Certificate in ESOL International (Advanced) </a>
-                </li>
-                <li><a
-                    href="https://www.belfastmet.ac.uk/course-detail/20-21/p00522-ad/cambridge-english-level-1-certificate-in-esol-international-first/"
-                    target="_blank">Cambridge English Level 1 Certificate in ESOL International (First) (2020)</a>
-                </li>
-              </ul>
-              <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
-              <ul>
-                 <li><a href="https://www.coursera.org/account/accomplishments/certificate/FTUJW99NUVLR" target="_blank">Aspectos básicos: Datos, datos, en todas partes (2022)</a>
-                <li><a href="https://www.coursera.org/learn/single-page-web-apps-with-angularjs" target="_blank">Single
-                    Page Web Applications with AngularJS </a>
-                <li><a href="https://www.coursera.org/account/accomplishments/certificate/9G94F6R9PBLP" target="_blank">Front-End
-                    Web UI Frameworks and Tools: Bootstrap 4 (2020)</a></li>
-                <li><a href="https://www.coursera.org/account/accomplishments/certificate/Z2YQ62L8RS27" target="_blank">Introduction to
-                    HTML5 (2020)</a></li>
-                <li><a href="https://coursera.org/share/36353a48cfca870eaea4c8e329d344dd" target="_blank">Learning How to
-                    Learn (2020)</a></li>
-                <li><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers"
-                    target="_blank">HTML, CSS, and Javascript for Web Developers (2020)</a></li>
-              </ul>
-              <li><a href="https://www.sololearn.com/" target="_blank">SoloLearn</a>, where I have
-                learned the basics
-                of:</li>
-              <ul>
-                <li><a href="https://www.sololearn.com/Course/SQL/" target="_blank">SQL Fundamentals
-                    (2019)</a></li>
-                <li><a href="https://www.sololearn.com/Course/Java/" target="_blank">Java Tutorial
-                    (2019)</a></li>
-                <li><a href="https://www.sololearn.com/Course/CSharp/" target="_blank">C# Tutorial
-                    (2019)</a></li>
-                <li><a href="https://www.sololearn.com/Course/JavaScript/" target="_blank">JavaScript
-                    Tutorial (2019)</a></li>
-                <li><a href="https://www.sololearn.com/Course/PHP/" target="_blank">PHP Tutorial
-                    (2019)</a></li>
-              </ul>
-              <li><a href="https://www.freecodecamp.org/derezade" target="_blank">FreeCodeCamp</a>,
-                which I found very
-                useful and I would recommend to everybody.</li>
-              <ul>
-                <li>Front End Libraries Certification (300 hours)</li>
-                <li>JavaScript Algorithms and Data Structures Certification (300 hours) (2021)</li>
-                <li><a href="https://www.freecodecamp.org/certification/derezade/responsive-web-design"
-                    target="_blank">Responsive Web Design Certification (300 hours) (2019)</a></li>
-              </ul>
-              <li><a href="https://www.edx.org/professional-certificate/uc3mx-introduction-java-programming"
-                  target="_blank">EDX</a> course in Java organised by Universidad
-                Carlos III de Madrid.</li>
-              <ul>
-                <li>IT.1.3-ESx: Introduction to programming with Java: Fundamental Data Structures and Algorithms
-                </li>
-                <li>IT.1.2-ESx: Introduction to programming with Java: best practice in coding (2020)</li>
-                <li>IT.1.1-ESx: Introduction to programming with Java: programming basics (2020)</li>
-              </ul>
-              <li><a href="https://programminghub.io/" target="_blank">Programming Hub</a></li>
-              <ul>
-                <li>Phyton Course 2020 (2021)</li>
-              </ul>
-              <li><a href="https://www.linkedin.com/learning/" target="_blank">Linkedin
-                  Learning.</a>
-              </li>
-              <ul>
-                <li><a
-                    href="https://www.linkedin.com/learning/paths/become-a-web-developer?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
-                    target="_blank">Learning Path Become a Web Developer Learning Path</a></li>
-                <ul>
-                  <li>HTML Essential Training (2020)</li>
-                  <li>Introduction to CSS (2020)</li>
-                  <li>CSS Essential Training (2020)</li>
-                  <li>JavaScript Essential Training (2020)</li>
-                  <li>Succeeding in Web Development: Full Stack and Front End (2020)</li>
-                  <li>Workflow Tools for Web Developers (2020)</li>
-                  <li>Git Essential Training: The Basics (2020)</li>
-                </ul>
-                <li><a
-                    href="https://www.linkedin.com/learning/paths/become-a-sql-developer?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
-                    target="_blank">Become a SQL Developer</a></li>
-                <ul>
-                  <li>Web Programming Foundations (2020)</li>
-                  <li>SQL Essential Training (2020)</li>
-                </ul>
-                <li><a
-                    href="https://www.linkedin.com/learning/paths/become-a-web-developer?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
-                    target="_blank">Learning Path Become a Web Developer (19 hours) (2020)</a></li>
-                <ul>
-                  <li>Programming Foundations: Fundamentals (2020)</li>
-                  <li>Programming Foundations: Databases (2020)</li>
-                  <li>Succeeding in Web Development: Full Stack and Front End (2020)</li>
-                  <li>HTML Essential Training (2020)</li>
-                  <li>Introduction to CSS (2020)</li>
-                  <li>JavaScript Essential Training (2020)</li>
-                  <li>Learning Python (2020)</li>
-                  <li>Learning Java (2020)</li>
-                  <li>Learning SQL Programming (2020)</li>
-                  <li>Programming Foundations: Web Security (2020)</li>
-                </ul>
-                <li><a
-                    href="https://www.linkedin.com/learning/paths/prepare-for-the-azure-fundamentals-certification-az-900?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
-                    target="_blank">Learning Path Prepare for the Azure Fundamentals Certification AZ-900 (8 hours)
-                    (2020)</a></li>
-                <ul>
-                  <li>Learning Cloud Computing: Core Concepts (2020)</li>
-                  <li>Introduction to Cloud Computing for IT Pros (2020)</li>
-                  <li>Azure Active Directory: Basics (2020)</li>
-                  <li>Learning Azure Management Tools (2020)</li>
-                  <li>Exam Prep: Microsoft Azure Fundamentals (AZ-900) (2020)</li>
-                </ul>
-                <li><a
-                    href="https://www.linkedin.com/learning/paths/become-a-java-programmer?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
-                    target="_blank">Learning Path Become a Java Programmer (20 hours) (2020)</a></li>
-                <ul>
-                  <li>Java 11+ Essential Training (2020)</li>
-                  <li>Learning Java Applications (2020)</li>
-                  <li>Java Memory Management (2020)</li>
-                  <li>Learning JDBC (2020)</li>
-                  <li>Java Persistence API (JPA): 1 The Basics (2020)</li>
-                  <li>Java Persistence API (JPA): 2 Inheritance and Querying (2020)</li>
-                  <li>Cloud-Native Development Using Java with Eclipse MicroProfile (2020)</li>
-                  <li>Nail Your Java Interview (2020)</li>
-                </ul>
-                <li><a href="https://www.linkedin.com/learning/paths/become-a-react-developer?u=56602209"
-                    target="_blank">Learning Path Become a React Developer (7 hours) (2021)</a></li>
-                <ul>
-                  <li>React.js Essential Training (2021)</li>
-                  <li>React.js: Building an Interface (2021)</li>
-                  <li>React: Creating and Hosting a Full-Stack Site (2021)</li>
-                  <li>React: Ecosystems (2021)</li>
-                </ul>
-                <li>Responsive Layout (2020)</li>
-                <li>UX Foundations: Accessibility (2020)</li>
-                <li>Learning GitHub (2020)</li>
-                <li>User Experience for Web Design (2020)</li>
-                <li>Agile Software Development: Remote Teams (2020)</li>
-                <li>GitHub for Web Designers (2020)</li>
-                <li>Database Clinic: SQLite (2020)</li>
-                <li>Electronics Foundations: Fundamentals (2020)</li>
-                <li>Introduction to Cloud Computing for IT Pros (2018) (2020)</li>
-                <li>Learning Arduino: Foundations (2020)</li>
-                <li>Learning Cloud Computing: Core Concepts (CompTia) (2020)</li>
-                <li>MySQL Essential Training (2020)</li>
-                <li>Oracle Java Certification: 2. Operators and Decision Statements (2020)</li>
-                <li>Prepare for the Azure Fundamentals Certification (AZ-900) (2020)</li>
-                <li>GIMP Essential Training (2020)</li>
-                <li>Learning Git and GitHub (2020)</li>
-                <li>Programming Foundations: Beyond the Fundamentals (2021)</li>
-                <li>Learning AngularJS 1 (2021)</li>
-                <li>Learning React.js (2021)</li>
-                <li>Learning ASP.NET (2021)</li>
-              </ul>
-              <li><a href="https://www.datacamp.com/" target="_blank">DataCamp.</a></li>
-              <ul>
-                <li>Introduction to SQL (2020)</li>
-                <li>Web Scraping in Python (2020)</li>
-              </ul>
-              <li><a href="https://codeinstitute.net/5-day-coding-challenge/" target="_blank">Code
-                  Institute.</a></li>
-              <ul>
-                <li>5 Day Coding Challenge (2020)</li>
-              </ul>
-              <li><a href="https://excelwithbusiness.com/" target="_blank">Excel with Business.</a>
-              </li>
-              <ul>
-                <li>Advanced Excel 2016 (2018)</li>
-                <li>Microsoft Word 2007 (2018)</li>
-                <li>SharePoint (2018)</li>
-                <li>Effective Outlook 2013 (2018)</li>
-                <li>PivotTable 2007 (2018)</li>
-              </ul>
-              <li><a href="https://wlingua.com/es/" target="_blank">Certified level B1 in English by
-                  Wlingua (2020).</a></li>
-              <li><a href="https://teaching.com/" target="_blank">Typing Certificate (2019).</a>
-              </li>
-            </ul>
-          </div><!-- courses -->
-          <div id="resources" role="tabpanel" aria-labelledby="resources-tab" class="tab-pane fade px-4 py-5">
-            <p class="leade font-italic">I have also used the following resources for self learning purposes:</p>
-            <ul>
-              <li>Oracle Cloud Learning</li>
-              <li>OpenClassRooms</li>
-              <li>Femxa</li>
-              <li>PUE</li>
-              <li>FreeCodeCamp</li>
-              <li>EDX</li>
-              <li>LinkedIn Learning</li>
-              <li>Youtube Tutorials</li>
-              <li>Udemy</li>
-              <li>W3schools</li>
-              <li>Greenfoot</li>
-              <li>GitHub Guides</li>
-            </ul>
-          </div><!-- resources -->
-          <div id="webinars" role="tabpanel" aria-labelledby="webinars-tab" class="tab-pane fade px-4 py-5">
-            <p class="leade font-italic">I have discovered the <a href="https://www.eventbrite.com/"
-                target="_blank">webinars</a> in the lockdown and since then I join some of
-              them from time to time and try to learn as much as possible:</p>
-            <ul>
-              <li>Lessons Learnt at Apple,Amazon and Google by Google Product Leader (April 2021)</li>
-              <li>Front-end Bootstrapping #8 (April 2021)</li>
-              <li>Microsoft Business Applications Launch Event (April 2021)</li>
-              <li>Women in Design and Technology (March 2021)</li>
-              <li>Creating personal portfolio Using React (March 2021)</li>
-              <li>Microsoft Dynamics 365 Virtual Training Day by Microsoft (February 2021)</li>
-              <li>freecodecamp (every Sunday for four hours since July 2020 to December 2020)</li>
-              <li>Front-end Bootstrapping #7 by MaestriaJS (August 2020)</li>
-              <li>Desarrollo de aplicaciones web y de escritorio - Development of web and desktop applications by Foc
-                Academy (July 2020)</li>
-              <li>Programación con base de datos - Data Base Programming by Foc Academy (July 2020)</li>
-              <li>Comprension general de desarrollo de Software - General knowledge developing software by Foc Academy
-                (July 2020)</li>
-              <li>Introduccion a la programacion orientada a objetos en C# - Introduction to object programming in C# by
-                Foc Academy (July 2020)</li>
-              <li>Thinkful Weinar. Intro to Javascritp by thinkful.com (June 2020)</li>
-              <li>Women and the future of work: Women and Cibersecurity by Alexandra Feldhausen (June 2020)</li>
-              <li>Microsoft Azure Virtual Training Day Fundamentals 900 by Microsoft (June 2020)</li>
-            </ul>
-          </div><!-- webinars -->
-          <div id="podcast" role="tabpanel" aria-labelledby="podcast-tab" class="tab-pane fade px-4 py-5">
-            <p class="leade font-italic">These are some of the podcast that I listen and try to learn from them, some
-              are in spanish:</p>
-            <ul>
-              <li>Syntax - Tasty Web Development Treats</li>
-              <li>React Native Radio</li>
-              <li>JS Party: JavaScript & Web Dev</li>
-              <li>Developer Tea</li>
-              <li>Changelog</li>
-              <li>Search Off the Record</li>
-              <li>Aprender a programar</li>
-              <li>Desarrollo profesional</li>
-              <li>Consultor IT</li>
-              <li>Coolest Nerds in the room</li>
-              <li>How I built this</li>
-              <li>Marketing online</li>
-              <li>La tecnologeria radio</li>
-              <li>Web reactiva</li>
-              <li>Programar es una mierda</li>
-              <li>Escuela de la memoria</li>
-              <li>El Arroyo Dev</li>
-              <li>No me da la vida</li>
-              <li>Software Daily</li>
-              <li>Hanselminutes with Scott Hanselman</li>
-              <li>Software Engeneering Radio</li>
-              <li>No dogma</li>
-              <li>Coding Blocks</li>
-              <li>The cynical Developer</li>
-              <li>Developing up</li>
-              <li>All Javascript podcast by Devcat.tv</li>
-              <li>Coder Radio</li>
-              <li>Front End Happy Hour</li>
-              <li>Podfeet</li>
-              <li>Complete Developer</li>
-              <li><a href="https://podcasts.google.com/search/freecodecamp" target="_blank">The
-                  freeCodeCamp</a></li>
-              <li>Learn to code with me</li>
-              <li>The code review</li>
-              <li>Coding After Work</li>
-              <li>Soft Skills Engineering</li>
-              <li>CodeNewbie</li>
-              <li>Ted Talks Daily</li>
-            </ul>
-          </div><!-- podcast -->
-        </div><!-- coursesResumeContent -->
-      </div> <!-- py-5 -->
-    </div> <!-- py-5 -->
-  </section>
-
-  <section id="contact" class="contact">
-    <!--Contact-->
-    <div class="container py-5">
-      <div class="row mb-5">
-        <div class="col-lg-7 text-white py-4 text-center mx-auto">
-          <h2 class="display-4" data-aos="fade-up">Let's work together...</h2>
-          <p class="lead mb-0">There are a few links to contact me</p>
+    <section id="home">
+      <div
+        class="card presentation text-center shadow-lg rounded .col-6 .col-lg-6 mx-auto"
+        data-aos="flip-right"
+      >
+        <img
+          class="card-img-top shadow-lg rounded"
+          src="https://i.ibb.co/r4hxQky/WIN-20201018-17-46-50-Pro-3.jpg"
+          alt="avatar"
+        />
+        <div class="card-body text-white">
+          <h5 class="card-title">My name is Cristina</h5>
+          <p class="card-text">
+            In order to practice what I have learned I have created this website
+            to show some of my projects, including the 7 projects done in the
+            bootcamp I have just finished.
+          </p>
+          <div class="col-12 col-sm align-self-center">
+            <a
+              role="button"
+              class="btn btn-block nav-link btn-primary"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Check my Courses and training"
+              data-placement="bottom"
+              href="#about"
+              >About me</a
+            >
+          </div>
+          <!-- col-12 -->
         </div>
-        <!--col-lg-7-->
+        <!-- card-body -->
       </div>
-      <!--row-->      
-      <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="cristina-picazo-merlos-6b4a9011a" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://es.linkedin.com/in/cristina-picazo-merlos-6b4a9011a?trk=profile-badge">Cristina Picazo Merlos</a></div> -->
-      <div class="row list-group" data-aos="fade-up-right">
-        <a class="list-group-item col-4 col-md-2" href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a"
-          target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp; Linkedin</a>
-        <a class="list-group-item col-4 col-md-2" href="https://github.com/CristinaPicazo" target="_blank"><i
-            class="fa fa-github" aria-hidden="true"></i>&nbsp; GitHub</a>
+      <!--presentation -->
+    </section>
 
-        <!--Google map-->
-        <div class="map" data-aos="fade-up-left">
-          <iframe id="gmap_canvas"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9863.115040689197!2d-0.4927316074136118!3d38.344382795849796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1650389882509!5m2!1ses!2ses"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="projects">
+      <h2 class="text-center text-white display-4" data-aos="fade-down">
+        Projects
+      </h2>
+
+      <!-- OpenClassRooms Projects -->
+      <div
+        class="card col-lg-6 col-12 m-auto rounded card-deck"
+        data-aos="fade-up"
+      >
+        <h5 class="card-title m-auto col-4 col-lg-4 col-6 m-auto">
+          Bootcamp Projects
+        </h5>
+        <ol class="list-group list-group-flush m-auto col-8">
+          <li class="list-group-item">
+            <a
+              class="text-dark"
+              href="https://github.com/CristinaPicazo/ReserviaRessources"
+              target="_blank"
+              >P2 - Reservia Resources</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              class="text-dark"
+              href="https://github.com/CristinaPicazo/ohmyfood"
+              target="_blank"
+              >P3 - ohmyfood</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              class="text-dark"
+              href="https://github.com/CristinaPicazo/GoMikeDesigns"
+              target="_blank"
+              >P4 - GoMike Designs</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              class="text-dark"
+              href="https://github.com/CristinaPicazo/Kanap"
+              target="_blank"
+              >P5 - Kanap</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              class="text-dark"
+              href="https://github.com/CristinaPicazo/piiquante"
+              target="_blank"
+              >P6 - Piiquante</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              class="text-dark"
+              href="https://github.com/CristinaPicazo/CONNECT-E"
+              target="_blank"
+              >P7 - Connect-e</a
+            >
+          </li>
+        </ol>
+      </div>
+
+      <div class="card-deck" data-aos="fade-up">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="./images/ohmyfood.png"
+              alt="ohmyfood"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazo.github.io/ohmyfood/"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Ohmyfood</h5>
+              </a>
+              <p class="card-text d-none">
+                Proyect 4. Web Developer Course in OpenClassRooms. Html, css &
+                sass.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
         </div>
-        <!--map-->
-      </div>
-      <!--row-->
-    </div>
-    <!--container-->
-  </section>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
 
-</body>
-<!-- jQuery Bootstrap JS plugins depend on it) -->
-<script defer src="script/jquery-3.5.1.slim.min.js"></script>
-<script defer src="script/bootstrap.min.js"></script>
-<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- Fade -->
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script>AOS.init();</script>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://github.com/CristinaPicazo/CONNECT-E/blob/master/front/assets/icon-above-font.png"
+              alt="Connecte"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://github.com/CristinaPicazo/CONNECT-E"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Connect-e</h5>
+              </a>
+              <p class="card-text d-none">
+                Proyect 7. Web Developer Course in OpenClassRooms. Full-stack
+                project.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="./images/Reservia.png"
+              alt="Reservia Ressources"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazo.github.io/ReserviaRessources/"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Reservia Ressources</h5>
+              </a>
+              <p class="card-text d-none">
+                Proyect 2. Web Developer Course in OpenClassRooms. Html and css.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="Draw_Diary/img/MoonTrees.png"
+              alt="Books"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/books/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Books</h5>
+              </a>
+              <p class="card-text d-none">
+                Collection of books that I have been reading these years. Html,
+                Css, Bootstrap and jQuery. I am still working on it and from
+                time to time I make some changes.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="Draw_Diary/img/faro.png"
+              alt="Draw Diary"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/Draw_Diary/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Draw Diary</h5>
+              </a>
+              <p class="card-text d-none">
+                Webpage created to show some basic paintings made by myself,
+                most of them are based in some youtube videos and using
+                PowerPoint. The website has been created using Bootstrap and
+                AngularJs. I am still working on it and from time to time I make
+                some changes.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/Sc8sz0Y/Shopping-List.png"
+              alt="Shopping List AngularJS"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/Shopping%20List/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Shopping List AngularJS</h5>
+              </a>
+              <p class="card-text d-none">
+                Shopping list created in AngularJS and Bootstrap to practise
+                part of the course "Single Page Web Applications with
+                AngularJS".
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/qmMRhMd/ToDo.png"
+              alt="ToDo List"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/ToDo/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">ToDo List</h5>
+              </a>
+              <p class="card-text d-none">
+                I created this website to practise some Javascript but I am
+                still working on it. It has been created in pure HTML, CSS and
+                JavaScript, without any framework.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/N6ks4kk/Greenfoot.png"
+              alt="GreenFoot Game"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://www.greenfoot.org/scenarios/25818"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">GreenFoot Game</h5>
+              </a>
+              <p class="card-text d-none">
+                This is a game created in Java to practise for the EDX Java
+                course. It is a bit ugly but completely functional.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/xh8x4ck/assignment1-Angular-JS.png"
+              alt="Coursera AngularJS Assignment 1"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazo.github.io/courseraAngular/assignment1/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">
+                  Coursera AngularJS Assignment 1
+                </h5>
+              </a>
+              <p class="card-text d-none">
+                First assignment in AngularJS the course "Single Page Web
+                Applications with AngularJS".
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/MRV0L8N/coursera.png"
+              alt="Coursera Bootstrap"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/coursera/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Coursera Bootstrap</h5>
+              </a>
+              <p class="card-text d-none">
+                Project based in Bootstrap made for a coursera's project course
+                for a the course "Front-End Web UI Frameworks and Tools:
+                Bootstrap 4".
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/3fhkq90/Coursera-Restaurant.png"
+              alt="Restaurant"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/mod5_solution/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Restaurant</h5>
+              </a>
+              <p class="card-text d-none">
+                Project made for a coursera's project course.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/7NpDS2R/Personal-Portfolio-Webpage.png"
+              alt="Personal Portfolio Webpage"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/Personal%20Portfolio%20Webpage/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">
+                  Personal Portfolio Webpage
+                </h5>
+              </a>
+              <p class="card-text d-none">
+                Webpage created in basic html and css for a freecodecamp's
+                project
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/XycJ1km/Technical-Documentation-Page.png"
+              alt="Technical Documentation Page"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/Technical%20Documentation%20Page/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">
+                  Technical Documentation Page
+                </h5>
+              </a>
+              <p class="card-text d-none">
+                Webpage created in basic html and css for a freecodecamp's
+                project.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card d-flex flex-column">
+            <img
+              class="card-img-top"
+              src="https://i.ibb.co/PY8cT1c/Tribute-Page.png"
+              alt="Tribute Page"
+            />
+            <div class="card-body text-white">
+              <a
+                href="https://cristinapicazomerlos.com/Tribute%20Page/index.html"
+                target="_blank"
+                class="text-white"
+              >
+                <h5 class="card-title text-center">Tribute Page</h5>
+              </a>
+              <p class="card-text d-none">
+                Webpage created in basic html and css for a freecodecamp's
+                project.
+              </p>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-lg-4 col-md-6 col-sm-12 -->
+      </div>
+      <!-- card-deck -->
+    </section>
+    <!-- projects -->
+
+    <!-- Courses -->
+    <!-- Bordered tabs-->
+    <section id="about">
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col-lg-8 text-white py-4 text-center mx-auto">
+            <h2 class="text-center text-white display-4" data-aos="fade-down">
+              Courses and training
+            </h2>
+            <p class="lead mb-0 text-justify d-none d-sm-inline-block">
+              I have always liked computers but it was only a few years ago that
+              I decided to study what I really enjoy. One day I discovered a
+              podcast about a bootcamp where lorry drivers were doing an online
+              course. Every week the teacher made a podcast interviewing his
+              students to check their progress and feelings. In that moment it
+              dawn on me that the reason I enjoyed the podcast so much was
+              because I shared their aspiration of becoming a software
+              developer. So I started planning how to achieve my goal. So as I
+              have started a web developer bootcamp with Openclassrooms.
+            </p>
+            <button
+              onclick="showMore()"
+              class="btn btn-primary d-none d-sm-inline-block"
+              id="collapseToRead"
+              role="button"
+              aria-expanded="false"
+            >
+              Read More
+            </button>
+            <div class="collapse" id="moreAboutMe">
+              <p class="lead mb-0 text-justify d-none d-sm-inline-block">
+                As a Spanish person living abroad (in Northern Ireland), having
+                the right certificates was a barrier to enrolling any higher
+                certificate course. I got my A levels and Higher National
+                Certificate in Financial Business in Spain, and those
+                certificates are not transferrable to UK education scheme, so I
+                couldn't use them to enroll the courses I needed in UK.
+                Therefore, I decided to take an online Higher National
+                Certificate in computer's software in Spain, specifically for
+                Development of Multi-Platform Applications.
+              </p>
+
+              <p class="lead mb-0 text-justify d-none d-sm-inline-block">
+                I decided to follow the typical path and take all the subjects
+                of the first year. Then I realized the workload was too high to
+                balance it with work. The online training did not work well for
+                anyone. The majority of students couldn't manage to follow the
+                pace of the course, and some teachers lacked the training
+                required to impart the subjects online. After finishing my first
+                year I managed to pass 2 subjects, which did not fulfil my
+                expectations. I also realized that it would very hard to manage
+                travelling to Spain to take the exams, so I decided not to
+                continue with this course and take a different approach. I
+                started some online courses to get the basics of multiplatform
+                programming and decided to retake the higher certificate in
+                Development of Multi-Platform Applications in the future.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 bg-white rounded shadow mb-5" data-aos="fade-up-right">
+          <ul
+            id="coursesResume"
+            role="tablist"
+            class="nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center"
+          >
+            <li class="nav-item flex-sm-fill">
+              <a
+                id="courses-tab"
+                data-toggle="tab"
+                href="#courses"
+                role="tab"
+                aria-controls="courses"
+                aria-selected="true"
+                class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border active"
+                >Courses</a
+              >
+            </li>
+            <li class="nav-item flex-sm-fill">
+              <a
+                id="resources-tab"
+                data-toggle="tab"
+                href="#resources"
+                role="tab"
+                aria-controls="resources"
+                aria-selected="false"
+                class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border"
+                >Other resources</a
+              >
+            </li>
+            <li class="nav-item flex-sm-fill">
+              <a
+                id="webinars-tab"
+                data-toggle="tab"
+                href="#webinars"
+                role="tab"
+                aria-controls="webinars"
+                aria-selected="false"
+                class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border"
+                >Webinars</a
+              >
+            </li>
+            <li class="nav-item flex-sm-fill">
+              <a
+                id="podcast-tab"
+                data-toggle="tab"
+                href="#podcast"
+                role="tab"
+                aria-controls="podcast"
+                aria-selected="false"
+                class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 border"
+                >Podcast</a
+              >
+            </li>
+          </ul>
+          <div id="coursesResumeContent" class="tab-content">
+            <div
+              id="courses"
+              role="tabpanel"
+              aria-labelledby="courses-tab"
+              class="tab-pane fade px-4 py-5 show active"
+            >
+              <p class="leade font-italic">
+                Given that the HNCs covered HTML, CSS, PHP, SQL, C# and Java, I
+                started with some certificated courses to complement those areas
+                among other languages, frameworks and hibraries, such as:
+              </p>
+              <a
+                href="https://www.youracclaim.com/badges/7ec67262-f60e-47d0-9a17-461b4cad8708/public_url"
+                target="_blank"
+              >
+                <img
+                  class="w-25 p-0"
+                  src="https://images.youracclaim.com/size/340x340/images/6a254dad-77e5-4e71-8049-94e5c7a15981/azure-fundamentals-600x600.png"
+                  alt="Microsoft Certified: Azure Fundamentals"
+                  width="140"
+                  height="140"
+              /></a>
+
+              <a
+                href="https://www.youracclaim.com/badges/c6e484c5-91e9-4815-ba17-24123259db99"
+                target="_blank"
+              >
+                <img
+                  class="w-25 p-0"
+                  src="https://images.youracclaim.com/size/340x340/images/c2537593-9f53-4901-9207-f51376ce7150/MTA-Software_Development_Fundamentals-600x600.png"
+                  alt="Microsoft Certified: Software Development Fundamentals"
+                  width="140"
+                  height="140"
+              /></a>
+
+              <a
+                href="https://www.youracclaim.com/badges/80fcd9f8-7633-4242-8f8b-818cb26db05a"
+                target="_blank"
+              >
+                <img
+                  class="w-25 p-0"
+                  src="https://images.youracclaim.com/images/bcce29de-388a-421e-aa4e-49d08e5f6b8c/MTA-Database_Fundamentals-600x600.png"
+                  alt="Microsoft Certified: Database Fundamentals"
+                  width="140"
+                  height="140"
+              /></a>
+
+              <a
+                href="https://www.credly.com/badges/c76d43c3-3c46-4646-93ea-c775754d65c8"
+                target="_blank"
+              >
+                <img
+                  class="w-25 p-0"
+                  src="https://images.credly.com/size/680x680/images/ff67d2c3-ad8f-4766-b795-fc34a8461c94/dynamics365-fundamentals-600x600.png"
+                  alt="Microsoft Certified: Dynamics 365 Fundamentals"
+                  width="140"
+                  height="140"
+              /></a>
+
+              <a
+                href="https://www.credly.com/badges/f5b0ff87-23cc-4ee9-8f57-fc4e716434f3/public_url"
+                target="_blank"
+              >
+                <img
+                  class="w-25 p-0"
+                  src="https://images.credly.com/size/680x680/images/2a6251f2-737b-4bf6-9190-d77570cc76fc/CERT-Fundamentals-Power-Platform.png"
+                  alt="Microsoft Certified: Dynamics 365 Fundamentals"
+                  width="140"
+                  height="140"
+              /></a>
+
+              <a
+                href="https://www.credly.com/badges/35bfacec-9d1b-48b1-b9ed-10ae39ba0705"
+                target="_blank"
+              >
+                <img
+                  class="w-25 p-0"
+                  src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png"
+                  alt="Microsoft Certified: Azure AI Fundamentals"
+                  width="140"
+                  height="140"
+              /></a>
+              <ul>
+                <li>
+                  <a
+                    href="https://learndigital.withgoogle.com/digitalgarage/course/web-developer"
+                    target="_blank"
+                    >Web Developer Bootcamp (EQF Associate's-level diploma) by
+                    OpenClassrooms
+                  </a>
+                  <ul>
+                    <li>P1 - Learning Plan</li>
+                    <li>P2 - Turn Mock-ups Into a Web Page with HTML & CSS</li>
+                    <li>
+                      <a
+                        href="https://github.com/CristinaPicazo/ohmyfood"
+                        target="_blank"
+                        >P3 - Integrate a mobile website with animations in
+                        CSSp</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/CristinaPicazo/GoMikeDesigns"
+                        target="_blank"
+                        >P4 - Optimize a website (SEO, performance and
+                        accessibility)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/CristinaPicazo/Kanap"
+                        target="_blank"
+                        >P5 - Build an e-commerce Website with JavaScript</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/CristinaPicazo/piiquante"
+                        target="_blank"
+                        >P6 - Build a Secure API for a Review App</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/CristinaPicazo/CONNECT-E.git"
+                        target="_blank"
+                        >P7 - Build a Full-Stack Solution (Internal social
+                        network)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.ausiasmarch.net/en/node/69"
+                    target="_blank"
+                    >Higher Technician in Web Application Development (EQF HNCs)
+                    / IES Mare Nostrum, Spain </a
+                  ><button type="button" class="btn btn-info">on-going</button>
+                </li>
+
+                <li>
+                  <a
+                    href="https://iessanvicente.com/alu/af/index.php"
+                    target="_blank"
+                    >Higher Technician in Administration and Finances BTEC Level
+                    4 / SQA Higher National Certificate (HNC) (SCQF Level 7)/
+                    IES Mare Nostrum, Spain (2011 - 2014)
+                  </a>
+                </li>
+                <li>IFCD15 Java SE 11 (ORACLE) by Femxa - Adquiero (2022)</li>
+                <li>Lombard Method Certificate, Inndromeda (2022)</li>
+                <li>IFCD89 JavaScript Avanzado by PUE (2022)</li>
+                <li>OpenClassrooms:</li>
+                <div>
+                  <ul>
+                    <li>Build web apps with ReactJS (2022)</li>
+                    <li>Create a Web Application With Vue.js (2022)</li>
+                    <li>
+                      Design the Logical Model of Your Relational Database
+                      (2022)
+                    </li>
+                    <li>Implement a Relational Database with SQL (2022)</li>
+                    <li>
+                      Go Full-Stack With Node.js, Express, and MongoDB (2022)
+                    </li>
+                    <li>Secure Your Web Application With OWASP (2022)</li>
+                    <li>Test Your Website’s Interface (2022)</li>
+                    <li>Write JavaScript for the Web (2022)</li>
+                    <li>Code an Accessible Website in HTML & CSS (2022)</li>
+                    <li>
+                      Ensure Your Website Meets Technical SEO Requirements
+                      (2022)
+                    </li>
+                    <li>Learn Programming With JavaScrip (2022)</li>
+                    <li>Make Your Web Content Accessible (2022)</li>
+                    <li>Create Modern CSS Animations (2021)</li>
+                    <li>Breakdown and integrate a mockup (2021)</li>
+                    <li>Create Web Page Layouts With CSS (2021)</li>
+                    <li>Produce Maintainable CSS With Sass (2021)</li>
+                    <li>Learn How to Learn (2021)</li>
+                    <li>Learn the Command Line in Terminal (2021)</li>
+                    <li>Manage Your Code Project With Git & Github (2021)</li>
+                    <li>
+                      Set Up Your Front-End Development Environment (2021)
+                    </li>
+                    <li>
+                      Stay Up to Date With Innovations in Your Field (2021)
+                    </li>
+                    <li>Understanding the Web (2021)</li>
+                  </ul>
+                </div>
+                <li>Introduction to Power BI by DataCamp (2021)</li>
+
+                <li>Microsoft Cetificates:</li>
+                <ul>
+                  <li>
+                    <a
+                      class="microsoft-icon"
+                      href="https://www.youracclaim.com/badges/7ec67262-f60e-47d0-9a17-461b4cad8708/public_url"
+                      target="_blank"
+                      >Microsoft Certified: Azure Fundamentals AZ-900 (2020)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="microsoft-icon"
+                      href="https://www.youracclaim.com/badges/c6e484c5-91e9-4815-ba17-24123259db99"
+                      target="_blank"
+                      >Microsoft Certified: Microsoft MTA Software Development
+                      Fundamentals 98-361 (2021)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="microsoft-icon"
+                      href="https://www.youracclaim.com/badges/c6e484c5-91e9-4815-ba17-24123259db99"
+                      target="_blank"
+                      >Microsoft Certified: Microsoft MTA Database Fundamentals
+                      Certified 98-364 (2021)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="microsoft-icon"
+                      href="https://www.credly.com/badges/c76d43c3-3c46-4646-93ea-c775754d65c8"
+                      target="_blank"
+                      >Microsoft Certified: Dynamics 365 Fundamentals MB-901
+                      (2021)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="microsoft-icon"
+                      href="https://www.credly.com/badges/f5b0ff87-23cc-4ee9-8f57-fc4e716434f3/public_url"
+                      target="_blank"
+                      >Microsoft Certified: Power Platform Fundamentals PL-900
+                      (2021)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="microsoft-icon"
+                      href="https://www.credly.com/badges/35bfacec-9d1b-48b1-b9ed-10ae39ba0705/public_url"
+                      target="_blank"
+                      >Microsoft Certified: Azure AI Fundamentals (2021)</a
+                    >
+                  </li>
+                </ul>
+
+                <li>
+                  <a href="https://www.belfastmet.ac.uk" target="_blank"
+                    >Belfastmet</a
+                  >
+                </li>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.belfastmet.ac.uk/course-detail/20-21/p00531-ad/cambridge-english-level-2-certificate-in-esol-international-advanced/"
+                      target="_blank"
+                      >Cambridge English Level 2 Certificate in ESOL
+                      International (Advanced)
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.belfastmet.ac.uk/course-detail/20-21/p00522-ad/cambridge-english-level-1-certificate-in-esol-international-first/"
+                      target="_blank"
+                      >Cambridge English Level 1 Certificate in ESOL
+                      International (First) (2020)</a
+                    >
+                  </li>
+                </ul>
+                <li>
+                  <a href="https://www.coursera.org" target="_blank"
+                    >Coursera</a
+                  >
+                </li>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.coursera.org/account/accomplishments/certificate/FTUJW99NUVLR"
+                      target="_blank"
+                      >Aspectos básicos: Datos, datos, en todas partes (2022)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.coursera.org/learn/single-page-web-apps-with-angularjs"
+                      target="_blank"
+                      >Single Page Web Applications with AngularJS
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.coursera.org/account/accomplishments/certificate/9G94F6R9PBLP"
+                      target="_blank"
+                      >Front-End Web UI Frameworks and Tools: Bootstrap 4
+                      (2020)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.coursera.org/account/accomplishments/certificate/Z2YQ62L8RS27"
+                      target="_blank"
+                      >Introduction to HTML5 (2020)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://coursera.org/share/36353a48cfca870eaea4c8e329d344dd"
+                      target="_blank"
+                      >Learning How to Learn (2020)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.coursera.org/learn/html-css-javascript-for-web-developers"
+                      target="_blank"
+                      >HTML, CSS, and Javascript for Web Developers (2020)</a
+                    >
+                  </li>
+                </ul>
+                <li>
+                  <a href="https://www.sololearn.com/" target="_blank"
+                    >SoloLearn</a
+                  >, where I have learned the basics of:
+                </li>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.sololearn.com/Course/SQL/"
+                      target="_blank"
+                      >SQL Fundamentals (2019)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.sololearn.com/Course/Java/"
+                      target="_blank"
+                      >Java Tutorial (2019)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.sololearn.com/Course/CSharp/"
+                      target="_blank"
+                      >C# Tutorial (2019)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.sololearn.com/Course/JavaScript/"
+                      target="_blank"
+                      >JavaScript Tutorial (2019)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.sololearn.com/Course/PHP/"
+                      target="_blank"
+                      >PHP Tutorial (2019)</a
+                    >
+                  </li>
+                </ul>
+                <li>
+                  <a
+                    href="https://www.freecodecamp.org/derezade"
+                    target="_blank"
+                    >FreeCodeCamp</a
+                  >, which I found very useful and I would recommend to
+                  everybody.
+                </li>
+                <ul>
+                  <li>Front End Libraries Certification (300 hours)</li>
+                  <li>
+                    JavaScript Algorithms and Data Structures Certification (300
+                    hours) (2021)
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.freecodecamp.org/certification/derezade/responsive-web-design"
+                      target="_blank"
+                      >Responsive Web Design Certification (300 hours) (2019)</a
+                    >
+                  </li>
+                </ul>
+                <li>
+                  <a
+                    href="https://www.edx.org/professional-certificate/uc3mx-introduction-java-programming"
+                    target="_blank"
+                    >EDX</a
+                  >
+                  course in Java organised by Universidad Carlos III de Madrid.
+                </li>
+                <ul>
+                  <li>
+                    IT.1.3-ESx: Introduction to programming with Java:
+                    Fundamental Data Structures and Algorithms
+                  </li>
+                  <li>
+                    IT.1.2-ESx: Introduction to programming with Java: best
+                    practice in coding (2020)
+                  </li>
+                  <li>
+                    IT.1.1-ESx: Introduction to programming with Java:
+                    programming basics (2020)
+                  </li>
+                </ul>
+                <li>
+                  <a href="https://programminghub.io/" target="_blank"
+                    >Programming Hub</a
+                  >
+                </li>
+                <ul>
+                  <li>Phyton Course 2020 (2021)</li>
+                </ul>
+                <li>
+                  <a href="https://www.linkedin.com/learning/" target="_blank"
+                    >Linkedin Learning.</a
+                  >
+                </li>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/learning/paths/become-a-web-developer?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
+                      target="_blank"
+                      >Learning Path Become a Web Developer Learning Path</a
+                    >
+                  </li>
+                  <ul>
+                    <li>HTML Essential Training (2020)</li>
+                    <li>Introduction to CSS (2020)</li>
+                    <li>CSS Essential Training (2020)</li>
+                    <li>JavaScript Essential Training (2020)</li>
+                    <li>
+                      Succeeding in Web Development: Full Stack and Front End
+                      (2020)
+                    </li>
+                    <li>Workflow Tools for Web Developers (2020)</li>
+                    <li>Git Essential Training: The Basics (2020)</li>
+                  </ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/learning/paths/become-a-sql-developer?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
+                      target="_blank"
+                      >Become a SQL Developer</a
+                    >
+                  </li>
+                  <ul>
+                    <li>Web Programming Foundations (2020)</li>
+                    <li>SQL Essential Training (2020)</li>
+                  </ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/learning/paths/become-a-web-developer?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
+                      target="_blank"
+                      >Learning Path Become a Web Developer (19 hours) (2020)</a
+                    >
+                  </li>
+                  <ul>
+                    <li>Programming Foundations: Fundamentals (2020)</li>
+                    <li>Programming Foundations: Databases (2020)</li>
+                    <li>
+                      Succeeding in Web Development: Full Stack and Front End
+                      (2020)
+                    </li>
+                    <li>HTML Essential Training (2020)</li>
+                    <li>Introduction to CSS (2020)</li>
+                    <li>JavaScript Essential Training (2020)</li>
+                    <li>Learning Python (2020)</li>
+                    <li>Learning Java (2020)</li>
+                    <li>Learning SQL Programming (2020)</li>
+                    <li>Programming Foundations: Web Security (2020)</li>
+                  </ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/learning/paths/prepare-for-the-azure-fundamentals-certification-az-900?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
+                      target="_blank"
+                      >Learning Path Prepare for the Azure Fundamentals
+                      Certification AZ-900 (8 hours) (2020)</a
+                    >
+                  </li>
+                  <ul>
+                    <li>Learning Cloud Computing: Core Concepts (2020)</li>
+                    <li>Introduction to Cloud Computing for IT Pros (2020)</li>
+                    <li>Azure Active Directory: Basics (2020)</li>
+                    <li>Learning Azure Management Tools (2020)</li>
+                    <li>
+                      Exam Prep: Microsoft Azure Fundamentals (AZ-900) (2020)
+                    </li>
+                  </ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/learning/paths/become-a-java-programmer?trk=learning-serp_learning_search-card&upsellOrderOrigin=homepage-learning_learning-search-bar_search-submit"
+                      target="_blank"
+                      >Learning Path Become a Java Programmer (20 hours)
+                      (2020)</a
+                    >
+                  </li>
+                  <ul>
+                    <li>Java 11+ Essential Training (2020)</li>
+                    <li>Learning Java Applications (2020)</li>
+                    <li>Java Memory Management (2020)</li>
+                    <li>Learning JDBC (2020)</li>
+                    <li>Java Persistence API (JPA): 1 The Basics (2020)</li>
+                    <li>
+                      Java Persistence API (JPA): 2 Inheritance and Querying
+                      (2020)
+                    </li>
+                    <li>
+                      Cloud-Native Development Using Java with Eclipse
+                      MicroProfile (2020)
+                    </li>
+                    <li>Nail Your Java Interview (2020)</li>
+                  </ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/learning/paths/become-a-react-developer?u=56602209"
+                      target="_blank"
+                      >Learning Path Become a React Developer (7 hours)
+                      (2021)</a
+                    >
+                  </li>
+                  <ul>
+                    <li>React.js Essential Training (2021)</li>
+                    <li>React.js: Building an Interface (2021)</li>
+                    <li>
+                      React: Creating and Hosting a Full-Stack Site (2021)
+                    </li>
+                    <li>React: Ecosystems (2021)</li>
+                  </ul>
+                  <li>Responsive Layout (2020)</li>
+                  <li>UX Foundations: Accessibility (2020)</li>
+                  <li>Learning GitHub (2020)</li>
+                  <li>User Experience for Web Design (2020)</li>
+                  <li>Agile Software Development: Remote Teams (2020)</li>
+                  <li>GitHub for Web Designers (2020)</li>
+                  <li>Database Clinic: SQLite (2020)</li>
+                  <li>Electronics Foundations: Fundamentals (2020)</li>
+                  <li>
+                    Introduction to Cloud Computing for IT Pros (2018) (2020)
+                  </li>
+                  <li>Learning Arduino: Foundations (2020)</li>
+                  <li>
+                    Learning Cloud Computing: Core Concepts (CompTia) (2020)
+                  </li>
+                  <li>MySQL Essential Training (2020)</li>
+                  <li>
+                    Oracle Java Certification: 2. Operators and Decision
+                    Statements (2020)
+                  </li>
+                  <li>
+                    Prepare for the Azure Fundamentals Certification (AZ-900)
+                    (2020)
+                  </li>
+                  <li>GIMP Essential Training (2020)</li>
+                  <li>Learning Git and GitHub (2020)</li>
+                  <li>
+                    Programming Foundations: Beyond the Fundamentals (2021)
+                  </li>
+                  <li>Learning AngularJS 1 (2021)</li>
+                  <li>Learning React.js (2021)</li>
+                  <li>Learning ASP.NET (2021)</li>
+                </ul>
+                <li>
+                  <a href="https://www.datacamp.com/" target="_blank"
+                    >DataCamp.</a
+                  >
+                </li>
+                <ul>
+                  <li>Introduction to SQL (2020)</li>
+                  <li>Web Scraping in Python (2020)</li>
+                </ul>
+                <li>
+                  <a
+                    href="https://codeinstitute.net/5-day-coding-challenge/"
+                    target="_blank"
+                    >Code Institute.</a
+                  >
+                </li>
+                <ul>
+                  <li>5 Day Coding Challenge (2020)</li>
+                </ul>
+                <li>
+                  <a href="https://excelwithbusiness.com/" target="_blank"
+                    >Excel with Business.</a
+                  >
+                </li>
+                <ul>
+                  <li>Advanced Excel 2016 (2018)</li>
+                  <li>Microsoft Word 2007 (2018)</li>
+                  <li>SharePoint (2018)</li>
+                  <li>Effective Outlook 2013 (2018)</li>
+                  <li>PivotTable 2007 (2018)</li>
+                </ul>
+                <li>
+                  <a href="https://wlingua.com/es/" target="_blank"
+                    >Certified level B1 in English by Wlingua (2020).</a
+                  >
+                </li>
+                <li>
+                  <a href="https://teaching.com/" target="_blank"
+                    >Typing Certificate (2019).</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- courses -->
+            <div
+              id="resources"
+              role="tabpanel"
+              aria-labelledby="resources-tab"
+              class="tab-pane fade px-4 py-5"
+            >
+              <p class="leade font-italic">
+                I have also used the following resources for self learning
+                purposes:
+              </p>
+              <ul>
+                <li>Oracle Cloud Learning</li>
+                <li>OpenClassRooms</li>
+                <li>Femxa</li>
+                <li>PUE</li>
+                <li>FreeCodeCamp</li>
+                <li>EDX</li>
+                <li>LinkedIn Learning</li>
+                <li>Youtube Tutorials</li>
+                <li>Udemy</li>
+                <li>W3schools</li>
+                <li>Greenfoot</li>
+                <li>GitHub Guides</li>
+              </ul>
+            </div>
+            <!-- resources -->
+            <div
+              id="webinars"
+              role="tabpanel"
+              aria-labelledby="webinars-tab"
+              class="tab-pane fade px-4 py-5"
+            >
+              <p class="leade font-italic">
+                I have discovered the
+                <a href="https://www.eventbrite.com/" target="_blank"
+                  >webinars</a
+                >
+                in the lockdown and since then I join some of them from time to
+                time and try to learn as much as possible:
+              </p>
+              <ul>
+                <li>
+                  Lessons Learnt at Apple,Amazon and Google by Google Product
+                  Leader (April 2021)
+                </li>
+                <li>Front-end Bootstrapping #8 (April 2021)</li>
+                <li>
+                  Microsoft Business Applications Launch Event (April 2021)
+                </li>
+                <li>Women in Design and Technology (March 2021)</li>
+                <li>Creating personal portfolio Using React (March 2021)</li>
+                <li>
+                  Microsoft Dynamics 365 Virtual Training Day by Microsoft
+                  (February 2021)
+                </li>
+                <li>
+                  freecodecamp (every Sunday for four hours since July 2020 to
+                  December 2020)
+                </li>
+                <li>Front-end Bootstrapping #7 by MaestriaJS (August 2020)</li>
+                <li>
+                  Desarrollo de aplicaciones web y de escritorio - Development
+                  of web and desktop applications by Foc Academy (July 2020)
+                </li>
+                <li>
+                  Programación con base de datos - Data Base Programming by Foc
+                  Academy (July 2020)
+                </li>
+                <li>
+                  Comprension general de desarrollo de Software - General
+                  knowledge developing software by Foc Academy (July 2020)
+                </li>
+                <li>
+                  Introduccion a la programacion orientada a objetos en C# -
+                  Introduction to object programming in C# by Foc Academy (July
+                  2020)
+                </li>
+                <li>
+                  Thinkful Weinar. Intro to Javascritp by thinkful.com (June
+                  2020)
+                </li>
+                <li>
+                  Women and the future of work: Women and Cibersecurity by
+                  Alexandra Feldhausen (June 2020)
+                </li>
+                <li>
+                  Microsoft Azure Virtual Training Day Fundamentals 900 by
+                  Microsoft (June 2020)
+                </li>
+              </ul>
+            </div>
+            <!-- webinars -->
+            <div
+              id="podcast"
+              role="tabpanel"
+              aria-labelledby="podcast-tab"
+              class="tab-pane fade px-4 py-5"
+            >
+              <p class="leade font-italic">
+                These are some of the podcast that I listen and try to learn
+                from them, some are in spanish:
+              </p>
+              <ul>
+                <li>Syntax - Tasty Web Development Treats</li>
+                <li>React Native Radio</li>
+                <li>JS Party: JavaScript & Web Dev</li>
+                <li>Developer Tea</li>
+                <li>Changelog</li>
+                <li>Search Off the Record</li>
+                <li>Aprender a programar</li>
+                <li>Desarrollo profesional</li>
+                <li>Consultor IT</li>
+                <li>Coolest Nerds in the room</li>
+                <li>How I built this</li>
+                <li>Marketing online</li>
+                <li>La tecnologeria radio</li>
+                <li>Web reactiva</li>
+                <li>Programar es una mierda</li>
+                <li>Escuela de la memoria</li>
+                <li>El Arroyo Dev</li>
+                <li>No me da la vida</li>
+                <li>Software Daily</li>
+                <li>Hanselminutes with Scott Hanselman</li>
+                <li>Software Engeneering Radio</li>
+                <li>No dogma</li>
+                <li>Coding Blocks</li>
+                <li>The cynical Developer</li>
+                <li>Developing up</li>
+                <li>All Javascript podcast by Devcat.tv</li>
+                <li>Coder Radio</li>
+                <li>Front End Happy Hour</li>
+                <li>Podfeet</li>
+                <li>Complete Developer</li>
+                <li>
+                  <a
+                    href="https://podcasts.google.com/search/freecodecamp"
+                    target="_blank"
+                    >The freeCodeCamp</a
+                  >
+                </li>
+                <li>Learn to code with me</li>
+                <li>The code review</li>
+                <li>Coding After Work</li>
+                <li>Soft Skills Engineering</li>
+                <li>CodeNewbie</li>
+                <li>Ted Talks Daily</li>
+              </ul>
+            </div>
+            <!-- podcast -->
+          </div>
+          <!-- coursesResumeContent -->
+        </div>
+        <!-- py-5 -->
+      </div>
+      <!-- py-5 -->
+    </section>
+
+    <section id="contact" class="contact">
+      <!--Contact-->
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-white py-4 text-center mx-auto">
+            <h2 class="display-4" data-aos="fade-up">Let's work together...</h2>
+            <p class="lead mb-0">There are a few links to contact me</p>
+          </div>
+          <!--col-lg-7-->
+        </div>
+        <!--row-->
+        <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="cristina-picazo-merlos-6b4a9011a" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://es.linkedin.com/in/cristina-picazo-merlos-6b4a9011a?trk=profile-badge">Cristina Picazo Merlos</a></div> -->
+        <div class="row list-group" data-aos="fade-up-right">
+          <a
+            class="list-group-item col-4 col-md-2"
+            href="https://www.linkedin.com/in/cristina-picazo-merlos-6b4a9011a"
+            target="_blank"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;
+            Linkedin</a
+          >
+          <a
+            class="list-group-item col-4 col-md-2"
+            href="https://github.com/CristinaPicazo"
+            target="_blank"
+            ><i class="fa fa-github" aria-hidden="true"></i>&nbsp; GitHub</a
+          >
+
+          <!--Google map-->
+          <div class="map" data-aos="fade-up-left">
+            <iframe
+              id="gmap_canvas"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9863.115040689197!2d-0.4927316074136118!3d38.344382795849796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1650389882509!5m2!1ses!2ses"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!--map-->
+        </div>
+        <!--row-->
+      </div>
+      <!--container-->
+    </section>
+  </body>
+  <!-- jQuery Bootstrap JS plugins depend on it) -->
+  <script defer src="script/jquery-3.5.1.slim.min.js"></script>
+  <script defer src="script/bootstrap.min.js"></script>
+  <script
+    defer
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Fade -->
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
